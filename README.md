@@ -3,3 +3,4 @@
  je vais mettre un dark mode et Compteur de compétences animées
  
 
+<img width="1341" height="2589" alt="moodboard" src="https://github.com/user-attachments/assets/82daf68a-ec40-40a6-8bd4-fc83a79bb0e4" />
