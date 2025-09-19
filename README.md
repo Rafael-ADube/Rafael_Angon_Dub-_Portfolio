@@ -1,15 +1,15 @@
-# 🌑 Rafael Angon Dub – Portfolio
+#  Rafael Angon Dub – Portfolio
 
 🔗 [Voir la maquette sur Figma](https://www.figma.com/design/8XveOAD5zTCq6OUnxx76P1/portfolio?node-id=23-2&t=d3G9F93l6VlPY10R-0)
 
 ---
 
-## 🎨 Moodboard & Inspirations
+##  Moodboard & Inspirations
 <img width="1341" height="2589" alt="moodboard" src="https://github.com/user-attachments/assets/82daf68a-ec40-40a6-8bd4-fc83a79bb0e4" />
 
 ---
 
-## ✨ Fonctionnalités prévues
+##  Fonctionnalités prévues
 - 🌗 **Dark Mode** pour un confort visuel optimal  
 - 📊 **Compteur de compétences animées** avec GSAP  
 - 🖼️ **Navigation via fenêtre modale** pour une expérience fluide  
@@ -19,14 +19,14 @@
 
 ---
 
-## 🚀 Stack technique
+##  Stack technique
 - **Frontend :** HTML, CSS, JavaScript (GSAP)  
 - **Design :** Figma  
 - **Animations :** GSAP  
 
 ---
 
-## 📌 Roadmap
+##  Roadmap
 - [x] Création du moodboard et maquette Figma  
 - [ ] Implémentation du dark mode  
 - [ ] Intégration des compteurs de compétences animés  
@@ -35,7 +35,4 @@
 
 ---
 
-## 👨‍💻 Auteur
-Rafael Angon Dub  
-📂 Projet : `582-531-formatif-audio` (Portfolio)
 
