@@ -10,10 +10,10 @@
 ---
 
 ##  Fonctionnalités prévues
-- 🌗 **Dark Mode** pour un confort visuel optimal  
-- 📊 **Compteur de compétences animées** avec GSAP  
-- 🖼️ **Navigation via fenêtre modale** pour une expérience fluide  
-- ⚡ Animations interactives inspirées de :
+-  **Dark Mode** pour un confort visuel optimal  
+-  **Compteur de compétences animées** avec GSAP  
+-  **Navigation via fenêtre modale** pour une expérience fluide  
+-  Animations interactives inspirées de :
   - [GSAP Animation Exemple 1](https://codepen.io/GreenSock/pen/XWzRraJ)  
   - [GSAP Animation Exemple 2](https://codepen.io/LMSN/pen/gOMZEME)  
 
