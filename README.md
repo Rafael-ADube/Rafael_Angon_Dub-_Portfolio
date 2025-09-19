@@ -20,9 +20,9 @@
 ---
 
 ##  Stack technique
-- **Frontend :** HTML, CSS, JavaScript (GSAP)  
-- **Design :** Figma  
-- **Animations :** GSAP  
+- Frontend : HTML, CSS, JavaScript (GSAP)  
+- Design : Figma  
+- Animations :** GSAP  
 
 ---
 
