@@ -30,22 +30,22 @@ body {
   border-radius: 6px;
 }
 
-/* COMPETENCES */
-.skills-grid {
+
+.app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 16px;
   margin-top: 20px;
 }
 
-.skill {
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.skill img {
+.app img {
   width: 60px;
   height: 60px;
   object-fit: contain;
@@ -53,7 +53,7 @@ body {
   
 }
 
-.skill p {
+.app p {
   font-size: 14px;
   color: var(--muted);
   margin: 0;

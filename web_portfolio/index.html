@@ -15,7 +15,7 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Portfolio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -72,44 +72,95 @@
       <div class="card mb-4">
         <img src="image/cendre.png" class="card-img-top" alt="Image 4">
       </div>
+<h2 class="section-title">Métrage</h2>
+<div class="row align-items-center mb-5">
+  <!-- CARROUSEL -->
+  <div class="col-md-6">
+    <div id="carouselMetrage" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/metrage1.png" class="d-block w-100 rounded" alt="Métrage 1">
+        </div>
+        <div class="carousel-item">
+          <img src="image/metrage2.png" class="d-block w-100 rounded" alt="Métrage 2">
+        </div>
+        <div class="carousel-item">
+          <img src="image/metrage3.png" class="d-block w-100 rounded" alt="Métrage 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMetrage" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMetrage" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <button>voir plus </button>
+    </div>
+  </div>
+
+  <!-- TEXTE À CÔTÉ -->
+  <div class="col-md-6 text-white">
+    <p>
+      <strong>Métrage</strong> est un projet vidéo expérimental. 
+      L’objectif était d’explorer la narration visuelle et l’ambiance sonore. 
+      Réalisé avec <em>DaVinci Resolve</em> et mixage sonore dans <em>Reaper</em>.
+    </p>
+  </div>
+</div>
 
        <h2 class="section-title">Programme</h2>
 
     <main>
   
-  <div class="skills-grid">
-    <div class="skill">
+  <div class="app-grid">
+    <div class="app">
       <img src="image/DaVinci_Resolve_Studio.png" alt="HTML/CSS">
       <p>HTML/CSS</p>
     </div>
-    <div class="skill">
+    <div class="app">
       <img src="image/Logo_Max_8_software.jpg" alt="JavaScript">
       <p>JavaScript</p>
     </div>
-    <div class="skill">
-      <img src="images/bootstrap.png" alt="Bootstrap">
+    <div class="app">
+      <img src="image/Logo_Max_8_software.jpg" alt="Bootstrap">
       <p>Bootstrap</p>
     </div>
-    <div class="skill">
-      <img src="images/git.png" alt="Git/GitHub">
+    <div class="app">
+      <img src="image/Logo_Max_8_software.jpg" alt="Git/GitHub">
       <p>Git/GitHub</p>
     </div>
-    <div class="skill">
-      <img src="images/responsive.png" alt="Responsive Design">
+    <div class="app">
+      <img src="image/Logo_Max_8_software.jpg" alt="Responsive Design">
       <p>Responsive Design</p>
     </div>
-    <div class="skill">
-      <img src="images/seo.png" alt="SEO">
+    <div class="app">
+      <img src="image/Logo_Max_8_software.jpg" alt="SEO">
       <p>SEO Basics</p>
     </div>
   </div>
 </main>
- <h2 class="section-title">à propos </h2>
+ <h2 class="section-title">À propos</h2>
+
+<section class="container my-5">
+  <div class="row align-items-center">
+   
+    <div class="col-md-6">
+      <h3>Qui suis-je ?</h3>
+      <p>
+        Je m'appelle Rafael, un passionné de multimédia et de création visuelle. J'aime explorer différentes formes d'expression artistique à travers mes projets. Mon objectif est de combiner créativité et technologie pour créer des expériences uniques.
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="image/moi.png" alt="Photo de Rafael" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
 
  
-  <footer class="bg-dark text-white text-center py-3 mt-6">
-    <p class="mb-0">&copy; 2025 - Portfolio Rafael</p>
-  </footer>
+<footer class=" bg-dark text-white text-center py-3">
+  <p class="mb-0">&copy; 2025 - Portfolio Rafael</p>
+</footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
