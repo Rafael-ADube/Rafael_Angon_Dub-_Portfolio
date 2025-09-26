@@ -13,38 +13,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-header {
-  background: var(--panel);
-  color: var(--muted);
-}
-
-header h1 {
-  color: var(--accent);
-}
-
-/* MOBILE MENU */
-#mobileMenu {
-  display: none;
-  flex-direction: column;
-  background: var(--panel);
-  padding: 10px;
-}
-
-#mobileMenu a {
-  color: var(--muted);
-  padding: 8px 0;
-  text-decoration: none;
-}
-
-#mobileMenu a:hover {
-  color: var(--accent);
-}
-
-/* MAIN */
-main.container {
-  padding: 20px 0;
-}
 
 .section-title {
   color: var(--accent);
@@ -82,6 +50,7 @@ main.container {
   height: 60px;
   object-fit: contain;
   margin-bottom: 8px;
+  
 }
 
 .skill p {
