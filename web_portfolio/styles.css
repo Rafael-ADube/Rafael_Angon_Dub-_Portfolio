@@ -98,4 +98,12 @@ footer {
               0 0 80px var(--accent);
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--accent);
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
 
