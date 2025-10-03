@@ -107,3 +107,11 @@ footer {
   color: white;
 }
 
+.hero h1 {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+}
+
+.hero p {
+  color: #00ffaa;
+}
