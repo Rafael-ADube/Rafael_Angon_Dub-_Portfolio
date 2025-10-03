@@ -3,8 +3,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Animation sur chaque projet
 document.querySelectorAll(".row.align-items-center").forEach((section, i) => {
+  let fromX;
+
+  if (i % 2 === 0) {
+    fromX = -150; // sections paires → partent de la gauche
+  } else {
+    fromX = 150;  // sections impaires → partent de la droite
+  }
+
   gsap.from(section, {
-    x: i % 2 === 0 ? -150 : 150, // alterne gauche/droite
+    x: fromX,
     opacity: 0,
     duration: 1,
     ease: "power3.out",
@@ -35,7 +43,7 @@ document.querySelectorAll(".row.align-items-center").forEach((section, i) => {
       });
     }
   });
-
+// TEST ANIMATION LE PROTFOLIO
   // Animation du paragraphe
   gsap.from(".hero p", {
     scrollTrigger: {
@@ -48,3 +56,18 @@ document.querySelectorAll(".row.align-items-center").forEach((section, i) => {
     delay: 0.4,
     ease: "power2.out"
   });
+    const h1 = document.querySelector("#hero-text h1");
+  const letters = h1.textContent.split("");
+  h1.textContent = "";
+  letters.forEach(char => {
+    const span = document.createElement("span");
+    span.textContent = char;
+    span.classList.add("char");
+    h1.appendChild(span);
+  });
+
+  // Timeline GSAP
+  const tl = gsap.timeline({defaults: {duration: 0.6, ease: "power3.out"}});
+
+  tl.to(".char", {opacity: 1, y: 0, stagger: 0.05})
+    .from("#hero-text p", {opacity: 0, y: 20, duration: 1}, "-=0.3");
