@@ -1,4 +1,9 @@
+
+
 // Activer ScrollTrigger
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Animation sur chaque projet
@@ -71,3 +76,48 @@ document.querySelectorAll(".row.align-items-center").forEach((section, i) => {
 
   tl.to(".char", {opacity: 1, y: 0, stagger: 0.05})
     .from("#hero-text p", {opacity: 0, y: 20, duration: 1}, "-=0.3");
+
+const { createApp, ref, onMounted } = Vue;
+
+const SkillCounter = {
+  props: ['name', 'level'],
+  template: `
+    <div class="col-md-3 my-3">
+      <h3>{{ name }}</h3>
+      <p class="counter">{{ displayValue }}%</p>
+    </div>
+  `,
+  setup(props) {
+    const displayValue = ref(0);
+
+    onMounted(() => {
+      gsap.fromTo(`.counter`, 
+        { innerText: 0 }, 
+        {
+          innerText: props.level,
+          duration: 2,
+          snap: { innerText: 1 },
+          scrollTrigger: {
+            trigger: `.counter`,
+            start: "top 80%",
+          }
+        });
+    });
+
+    return { displayValue };
+  }
+};
+
+createApp({
+  components: { SkillCounter },
+  setup() {
+    const skills = ref([
+      { name: "Photoshop", level: 90 },
+      { name: "Illustrator", level: 85 },
+      { name: "Vue.js", level: 80 },
+      { name: "3D / Maya", level: 70 }
+    ]);
+    return { skills };
+  }
+}).mount('#skills-section');
+
