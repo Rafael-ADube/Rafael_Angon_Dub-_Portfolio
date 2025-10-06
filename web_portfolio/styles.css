@@ -1,3 +1,6 @@
+/* ==========================
+   FONT
+========================== */
 @font-face {
   font-family: 'Monomod';
   src: url('fonts/Monomod.otf') format('opentype');
@@ -5,7 +8,9 @@
   font-style: normal;
 }
 
-
+/* ==========================
+   VARIABLES GLOBALES
+========================== */
 :root {
   --bg: #151218;
   --panel: #1f1a22;
@@ -13,7 +18,9 @@
   --muted: #bdbdbd;
 }
 
-/* GLOBAL */
+/* ==========================
+   GLOBAL
+========================== */
 body {
   margin: 0;
   background: var(--bg);
@@ -22,12 +29,14 @@ body {
   line-height: 1.6;
 }
 
-/* TITRES */
+/* ==========================
+   TITRES
+========================== */
 .section-title {
   color: var(--accent);
   font-weight: 700;
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 100px 0 50px;
   font-size: 2rem;
   position: relative;
 }
@@ -42,11 +51,60 @@ body {
   border-radius: 2px;
 }
 
-/* APP GRID */
+/* ==========================
+   NAVBAR
+========================== */
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* ==========================
+   HERO
+========================== */
+.hero h1 {
+  color: #1fe060;
+  text-shadow: 0 0 10px #1fe060, 0 0 20px #1fe060, 0 0 40px #1fe060;
+  font-size: 3rem;
+  font-family: 'Monomod';
+}
+
+.hero p {
+  color: #7affb7;
+  font-size: 1.2rem;
+}
+
+/* ==========================
+   PROJETS
+========================== */
+.projet {
+  margin-bottom: 120px; /* espace entre les projets */
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.projet img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.projet img:hover {
+  transform: scale(1.02);
+}
+
+/* ==========================
+   APP GRID (PROGRAMMES)
+========================== */
 .app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
+  gap: 40px;
   margin-top: 30px;
 }
 
@@ -79,7 +137,9 @@ body {
   margin: 0;
 }
 
-/* BOUTON NEON */
+/* ==========================
+   BOUTON NEON
+========================== */
 .neon-btn {
   display: inline-block;
   font-size: 18px;
@@ -100,39 +160,31 @@ body {
   color: #111;
   box-shadow: 0 0 20px var(--accent),
               0 0 40px var(--accent),
-     0 0 80px var(--accent);
+              0 0 80px var(--accent);
 }
 
-/* NAVBAR */
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--accent);
-  font-weight: 500;
+/* ==========================
+   CONTACT
+========================== */
+#contact {
+  margin-top: 100px;
+  text-align: center;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
-  text-shadow: 0 0 8px var(--accent);
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
-/* HERO */
-.hero h1 {
-  color: #1fe060;
-  text-shadow: 0 0 10px #1fe060, 0 0 20px #1fe060, 0 0 40px #1fe060;
-  font-size: 3rem;
-}
-
-.hero p {
-  color: #7affb7;
-  font-size: 1.2rem;
-}
-
-/* FOOTER */
+/* ==========================
+   FOOTER
+========================== */
 footer {
   background: var(--panel);
   color: var(--muted);
   text-align: center;
   padding: 15px 0;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 14px;
   border-top: 1px solid #333;
 }
