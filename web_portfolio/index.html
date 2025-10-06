@@ -74,7 +74,8 @@
     </div>
     <!-- TEXTE -->
     <div class="col-md-6 order-2 text-white">
-      <p><strong>Métrage</strong> est un site web de critique où l’on analyse films, séries et courts-métrages.</p>
+      <p><strong>Métrage</strong> Métrage est un site de critiques consacré à la cinématographie sous toutes ses formes : films, séries et courts métrages.
+Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.</p>
     <a href="metrage.html" class="neon-btn">VOIR</a>
 
     </div>
@@ -287,12 +288,14 @@
       </div>
     </div>
   </section>
-  <!-- SECTION COMPÉTENCES -->
 <div id="skills-section">
-  <h2 class="section-title">Compétences</h2>
+  <h2 class="section-title">Programme</h2>
   <div class="row text-center">
-    <skill-counter v-for="skill in skills" :key="skill.name" 
-                   :name="skill.name" :level="skill.level"></skill-counter>
+    <div v-for="prog in programs" :key="prog.name" class="col-md-3 col-6 my-4">
+      <img :src="prog.image" :alt="prog.name" class="img-fluid mb-2" style="max-height:80px;">
+      <h5>{{ prog.name }}</h5>
+      <p class="counter">{{ prog.current }}%</p>
+    </div>
   </div>
 </div>
 </main>

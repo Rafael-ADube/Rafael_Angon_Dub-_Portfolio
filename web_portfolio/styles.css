@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Monomod';
+  src: url('fonts/Monomod.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   --bg: #151218;
   --panel: #1f1a22;
@@ -10,7 +18,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--muted);
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Monomod";
   line-height: 1.6;
 }
 
