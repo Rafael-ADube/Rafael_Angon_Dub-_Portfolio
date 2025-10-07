@@ -1,9 +1,6 @@
 
 
 // Activer ScrollTrigger
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Animation sur chaque projet
