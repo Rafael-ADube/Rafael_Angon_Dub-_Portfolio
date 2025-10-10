@@ -41,7 +41,7 @@ body {
   color: var(--accent);
   font-weight: 700;
   text-align: center;
-  margin: 100px 0 50px;
+  margin: 150px 0 50px;
   font-size: 2rem;
   position: relative;
   font-family: 'Monomod';
@@ -222,3 +222,8 @@ footer {
   color: #fff;
   text-decoration: underline;
 }
+section {
+  margin-bottom: 200px;
+}
+
+
