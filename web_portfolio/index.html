@@ -21,9 +21,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Projets</a>
-        <a class="nav-link" href="#">À propos</a>
-        <a class="nav-link" href="#">Contacts</a>
+        <a class="nav-link" href="#projets">Projets</a>
+        <a class="nav-link" href="#apropos">À propos</a>
+       <a class="nav-link" href="#contact">Contact</a>
       </div>
     </div>
   </div>
@@ -44,8 +44,9 @@
 </section>
 
 <!-- MAIN -->
-<main class="container">
- <h1 class="section-title">projet</h1>
+<main class="container" id="projets">
+  <h1 class="section-title">Projets</h1>
+
   <!-- PROJET 1 : MÉTRAGE -->
   <h2 class="section-title">Métrage</h2>
   <div class="row align-items-center mb-5 projet">
@@ -190,42 +191,50 @@ Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arsene
     </div>
     <!-- IMAGE MOBILE -->
     <div class="col-12 order-1 d-md-none mb-3">
-      <img src="image/projet4_1.png" class="img-fluid rounded" alt="Projet 4 mobile">
+      <img src="image/paysage.png" class="img-fluid rounded" alt="Projet 4 mobile">
     </div>
   </div>
 
-  <!-- PROJET 5 : BANDIT-GO -->
-  <h2 class="section-title">Bandit-go</h2>
-  <div class="row align-items-center mb-5 projet">
-    <!-- IMAGE / CARROUSEL -->
-    <div class="col-md-6 order-md-1 d-none d-md-block">
-      <div id="carouselProjet5" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image/banditgo.png" class="d-block w-100 rounded" alt="Projet 5 - 1">
-          </div>
-          <div class="carousel-item">
-            <img src="image/banditgo2.png" class="d-block w-100 rounded" alt="Projet 5 - 2">
-          </div>
+<!-- PROJET 5 : BANDIT-GO -->
+<h2 class="section-title">Bandit-go</h2>
+
+<div class="row align-items-center mb-5 projet">
+  <!-- IMAGE / CARROUSEL (version desktop) -->
+  <div class="col-md-6 order-md-1 d-none d-md-block">
+    <div id="carouselBanditGo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/banditgo.png" class="d-block w-100 rounded" alt="Bandit-go 1">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet5" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet5" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <img src="image/banditgo2.png" class="d-block w-100 rounded" alt="Bandit-go 2">
+        </div>
+        <div class="carousel-item">
+          <img src="image/banditgo3.png" class="d-block w-100 rounded" alt="Bandit-go 3">
+        </div>
       </div>
-    </div>
-    <!-- IMAGE MOBILE -->
-    <div class="col-12 d-md-none mb-3">
-      <img src="image/ba.png" class="img-fluid rounded" alt="Projet 5 mobile">
-    </div>
-    <!-- TEXTE -->
-    <div class="col-md-6 order-md-2 text-white">
-      <p><strong>Bandit-go</strong> est un jeu rétro en VR inspiré de Frogger.</p>
-      <button class="neon-btn">VOIR</button>
+
+      <!-- BOUTONS DE CONTRÔLE -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanditGo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBanditGo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
   </div>
+
+  <!-- IMAGE MOBILE -->
+  <div class="col-12 d-md-none mb-3">
+    <img src="image/banditgo.png" class="img-fluid rounded" alt="Bandit-go mobile">
+  </div>
+
+  <!-- TEXTE -->
+  <div class="col-md-6 order-md-2 text-white">
+    <p><strong>Bandit-go</strong> est un jeu 3D inspiré des courses de voitures, créé dans Unity.</p>
+    <button class="neon-btn">VOIR</button>
+  </div>
+</div>
 
   <!-- PROJET 6 -->
   <h2 class="section-title">Projet 6</h2>
@@ -281,7 +290,7 @@ Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arsene
 
   <!-- SECTION À PROPOS -->
   <h2 class="section-title">À propos</h2>
-  <section class="container my-5">
+  <section class="container my-5" id="apropos"></section>
     <div class="row align-items-center">
       <div class="col-md-6">
         <h3>Qui suis-je ?</h3>
@@ -314,15 +323,20 @@ Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arsene
     <div class="col-md-8 text-center">
       <p>Vous pouvez me contacter pour discuter de projets ou collaborations.</p>
 
-      <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
-        <!-- Lien Gmail -->
-        <a href="mailto:tonemail@gmail.com" class="neon-btn">
-          ✉️ Envoyer un message
-        </a>
+     <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
+  <!-- Lien Gmail -->
+  <a href="mailto:kostodube@gmail.com" class="neon-btn">
+     Envoyer un message
+  </a>
 
         <!-- Lien Indeed -->
         <a href="https://www.indeed.com" target="_blank" class="neon-btn">
-          💼 Voir mon profil Indeed
+          Voir mon profil Indeed
+        </a>
+
+        <!-- Lien GitHub -->
+        <a href="https://github.com/Rafael-ADube" target="_blank" class="neon-btn">
+           Voir mon GitHub
         </a>
       </div>
     </div>
