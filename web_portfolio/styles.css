@@ -13,7 +13,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /* ==========================
    VARIABLES GLOBALES
 ========================== */
@@ -27,10 +26,6 @@
 /* ==========================
    GLOBAL
 ========================== */
-html {
-  scroll-behavior: smooth; /* 💡 défilement fluide ajouté ici */
-}
-
 body {
   margin: 0;
   background: var(--bg);
@@ -88,7 +83,7 @@ body {
 .hero p {
   color: #7affb7;
   font-size: 1.2rem;
-  font-family: 'Monomod';
+   font-family: 'Monomod';
 }
 
 /* ==========================
@@ -144,7 +139,7 @@ body {
 }
 
 .app p {
-  font-family: 'Monomod';
+   font-family: 'Monomod';
   font-size: 15px;
   color: var(--muted);
   margin: 0;
@@ -202,7 +197,6 @@ footer {
   font-size: 14px;
   border-top: 1px solid #333;
 }
-
 .section-projet {
   font-size: 1.2rem; /* texte plus grand */
   line-height: 1.8; /* plus lisible */
@@ -214,12 +208,10 @@ footer {
   font-family: 'Monomod';
   margin-top: 1.2rem;
 }
-
 #Portfolio {
   font-size: 4vw;
   font-weight: 600;
 }
-
 .section-projet ul a {
   color: var(--accent);
   text-decoration: none;
