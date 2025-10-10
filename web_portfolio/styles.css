@@ -1,31 +1,27 @@
-/* ==========================
-   FONT
-========================== */
+/* FONTS */
 @font-face {
   font-family: 'Monomod';
   src: url('fonts/Monomod.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'space-grotesk';
   src: url("fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf") format('opentype');
   font-weight: normal;
   font-style: normal;
 }
-/* ==========================
-   VARIABLES GLOBALES
-========================== */
+
+/* VARIABLES GLOBALES */
 :root {
-  --bg: #151218;
-  --panel: #1f1a22;
-  --accent: #1fe060;
-  --muted: #bdbdbd;
+  --bg: #151218;       /* Couleur de fond principale */
+  --panel: #1f1a22;    /* Couleur des panneaux / cartes */
+  --accent: #1fe060;   /* Couleur accent / néon */
+  --muted: #bdbdbd;    /* Couleur de texte secondaire */
 }
 
-/* ==========================
-   GLOBAL
-========================== */
+/* STYLE GLOBAL */
 body {
   margin: 0;
   background: var(--bg);
@@ -34,9 +30,7 @@ body {
   line-height: 1.6;
 }
 
-/* ==========================
-   TITRES
-========================== */
+/* TITRES DE SECTION */
 .section-title {
   color: var(--accent);
   font-weight: 700;
@@ -57,9 +51,7 @@ body {
   border-radius: 2px;
 }
 
-/* ==========================
-   NAVBAR
-========================== */
+/* NAVBAR */
 .navbar-dark .navbar-nav .nav-link {
   color: var(--accent);
   font-weight: 500;
@@ -70,12 +62,10 @@ body {
   text-shadow: 0 0 8px var(--accent);
 }
 
-/* ==========================
-   HERO
-========================== */
+/* HERO / SECTION PRINCIPALE */
 .hero h1 {
-  color: #1fe060;
-  text-shadow: 0 0 10px #1fe060, 0 0 20px #1fe060, 0 0 40px #1fe060;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent), 0 0 40px var(--accent);
   font-size: 3rem;
   font-family: 'Monomod';
 }
@@ -83,12 +73,10 @@ body {
 .hero p {
   color: #7affb7;
   font-size: 1.2rem;
-   font-family: 'Monomod';
+  font-family: 'Monomod';
 }
 
-/* ==========================
-   PROJETS
-========================== */
+/* PROJETS */
 .projet {
   margin-bottom: 120px; /* espace entre les projets */
   padding-bottom: 40px;
@@ -105,9 +93,7 @@ body {
   transform: scale(1.02);
 }
 
-/* ==========================
-   APP GRID (PROGRAMMES)
-========================== */
+/* GRILLE DES APPLICATIONS / PROGRAMMES */
 .app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -139,41 +125,36 @@ body {
 }
 
 .app p {
-   font-family: 'Monomod';
+  font-family: 'Monomod';
   font-size: 15px;
   color: var(--muted);
   margin: 0;
 }
 
-/* ==========================
-   BOUTON NEON
-========================== */
+/* BOUTON NÉON */
 .neon-btn {
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;      
   font-weight: bold;
   color: var(--accent);
   background: transparent;
   border: 2px solid var(--accent);
-  border-radius: 50px;
-  padding: 12px 36px;
+  border-radius: 30px;   
+  padding: 8px 24px;     
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px; 
   transition: all 0.3s ease;
 }
 
 .neon-btn:hover {
   background: var(--accent);
   color: #111;
-  box-shadow: 0 0 20px var(--accent),
-              0 0 40px var(--accent),
-              0 0 80px var(--accent);
+  box-shadow: 0 0 4px var(--accent),
+              0 0 6px var(--accent);
 }
 
-/* ==========================
-   CONTACT
-========================== */
+/* CONTACT */
 #contact {
   margin-top: 100px;
   text-align: center;
@@ -185,9 +166,7 @@ body {
   font-family: 'Monomod';
 }
 
-/* ==========================
-   FOOTER
-========================== */
+/* FOOTER */
 footer {
   background: var(--panel);
   color: var(--muted);
@@ -197,21 +176,25 @@ footer {
   font-size: 14px;
   border-top: 1px solid #333;
 }
+
+/* TEXTES ET LIENS DES PROJETS */
 .section-projet {
-  font-size: 1.2rem; /* texte plus grand */
-  line-height: 1.8; /* plus lisible */
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .section-projet h4 {
   color: var(--accent);
-  font-size: 1.4rem; /* un peu plus gros */
+  font-size: 1.4rem;
   font-family: 'Monomod';
   margin-top: 1.2rem;
 }
+
 #Portfolio {
   font-size: 4vw;
   font-weight: 600;
 }
+
 .section-projet ul a {
   color: var(--accent);
   text-decoration: none;
@@ -222,8 +205,4 @@ footer {
   color: #fff;
   text-decoration: underline;
 }
-section {
-  margin-bottom: 200px;
-}
-
 

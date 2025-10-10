@@ -88,7 +88,7 @@ const app = Vue.createApp({
 mounted() {
   ScrollTrigger.create({
     trigger: "#skills-section",
-    start: "top 80%",
+    start: "top 90%",
     onEnter: () => this.startAnimation()
   });
 }
