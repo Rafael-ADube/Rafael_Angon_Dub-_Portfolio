@@ -57,6 +57,9 @@ document.querySelectorAll(".row.align-items-center").forEach((section, i) => {
 const app = Vue.createApp({
   data() {
     return {
+      loading: true,
+      message: "Chargement...",
+      projects: [],
       programs: [
         { name: "DaVinci", level: 85, current: 0, image: "image/DaVinci_Resolve_Studio.png" },
         { name: "Max", level: 70, current: 0, image: "image/Logo_Max_8_software.jpg" },
@@ -81,57 +84,43 @@ const app = Vue.createApp({
             program.current = Math.round(program.current);
           }
         });
-      }
-      );
+      });
     }
-  },
-mounted() {
-  ScrollTrigger.create({
-    trigger: "#skills-section",
-    start: "top 90%",
-    onEnter: () => this.startAnimation()
-  });
-}
-});
-
-app.mount('#skills-section');
-gsap.from("#skills-section img", {
-  scrollTrigger: {
-    trigger: "#skills-section",
-    start: "top 90%",
-  },
-  opacity: 0,
-  scale: 0.8,
-  duration: 1,
-  stagger: 0.2,
-  ease: "power2.out"
-});
-
-const appli = Vue.createApp({
-  data() {
-    return {
-      projects: [],   // 3.2 Donnée projects
-      loading: true,
-      message: "Chargement..."
-    };
+    
   },
   mounted() {
-    console.log("L'app Vue a été créée et montée au DOM (mounted) !");
-    // Fetch des données du fichier JSON
+    // Fetch projets
     fetch("projects.json")
       .then(res => res.json())
       .then(data => {
-        this.projects = data;  // Stocker les projets dans la donnée projects
-        this.loading = false;  // Fin du chargement
+        this.projects = data;
+        this.loading = false;
       })
       .catch(err => {
-        console.error("Erreur de chargement :", err);
+        console.error(err);
         this.message = "Erreur lors du chargement des projets";
       });
-  },
-  methods: {
-    // Tu peux ajouter des méthodes ici si besoin
+
+    // GSAP ScrollTrigger pour programmes
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+      trigger: "#skills-section",
+      start: "top 90%",
+      onEnter: () => this.startAnimation()
+    });
+
+    gsap.from("#skills-section img", {
+      scrollTrigger: {
+        trigger: "#skills-section",
+        start: "top 90%",
+      },
+      opacity: 0,
+      scale: 0.8,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
   }
 });
 
-appli.mount(".appli-vue");
+app.mount(".appli-vue");

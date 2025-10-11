@@ -206,28 +206,3 @@ footer {
   text-decoration: underline;
 }
 
-.project-card {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-.img-hover {
-  transition: transform 0.3s;
-}
-
-.img-hover:hover {
-  transform: scale(1.05);
-}
-
-.card-title {
-  font-size: 1.25rem;
-}
-
-.card-text {
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
