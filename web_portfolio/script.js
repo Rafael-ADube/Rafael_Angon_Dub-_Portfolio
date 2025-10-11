@@ -107,3 +107,31 @@ gsap.from("#skills-section img", {
   ease: "power2.out"
 });
 
+const appli = Vue.createApp({
+  data() {
+    return {
+      projects: [],   // 3.2 Donnée projects
+      loading: true,
+      message: "Chargement..."
+    };
+  },
+  mounted() {
+    console.log("L'app Vue a été créée et montée au DOM (mounted) !");
+    // Fetch des données du fichier JSON
+    fetch("projects.json")
+      .then(res => res.json())
+      .then(data => {
+        this.projects = data;  // Stocker les projets dans la donnée projects
+        this.loading = false;  // Fin du chargement
+      })
+      .catch(err => {
+        console.error("Erreur de chargement :", err);
+        this.message = "Erreur lors du chargement des projets";
+      });
+  },
+  methods: {
+    // Tu peux ajouter des méthodes ici si besoin
+  }
+});
+
+appli.mount(".appli-vue");
