@@ -29,9 +29,9 @@
     "category": "video",
     "description": "Expérience visuelle et sonore immersive.",
     "images": [
-      "image/page-rouge.png",
-      "image/page-rouge2.png",
-      "image/page-rouge3.png"
+      "image/pagerouge.png",
+      "image/pagerouge2.png",
+      "image/pagerouge3.png"
     ],
     "link": "page-rouge.html"
   },
