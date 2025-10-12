@@ -1,4 +1,4 @@
-/* FONTS */
+/* -------------------- FONTS -------------------- */
 @font-face {
   font-family: 'Monomod';
   src: url('fonts/Monomod.otf') format('opentype');
@@ -13,7 +13,7 @@
   font-style: normal;
 }
 
-/* VARIABLES GLOBALES */
+/* -------------------- VARIABLES GLOBALES -------------------- */
 :root {
   --bg: #151218;       /* Couleur de fond principale */
   --panel: #1f1a22;    /* Couleur des panneaux / cartes */
@@ -21,7 +21,7 @@
   --muted: #bdbdbd;    /* Couleur de texte secondaire */
 }
 
-/* STYLE GLOBAL */
+/* -------------------- STYLE GLOBAL -------------------- */
 body {
   margin: 0;
   background: var(--bg);
@@ -30,7 +30,7 @@ body {
   line-height: 1.6;
 }
 
-/* TITRES DE SECTION */
+/* -------------------- TITRES -------------------- */
 .section-title {
   color: var(--accent);
   font-weight: 700;
@@ -51,7 +51,7 @@ body {
   border-radius: 2px;
 }
 
-/* NAVBAR */
+/* -------------------- NAVBAR -------------------- */
 .navbar-dark .navbar-nav .nav-link {
   color: var(--accent);
   font-weight: 500;
@@ -62,10 +62,12 @@ body {
   text-shadow: 0 0 8px var(--accent);
 }
 
-/* HERO / SECTION PRINCIPALE */
+/* -------------------- HERO / SECTION PRINCIPALE -------------------- */
 .hero h1 {
   color: var(--accent);
-  text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent), 0 0 40px var(--accent);
+  text-shadow: 0 0 10px var(--accent),
+               0 0 20px var(--accent),
+               0 0 40px var(--accent);
   font-size: 3rem;
   font-family: 'Monomod';
 }
@@ -76,24 +78,7 @@ body {
   font-family: 'Monomod';
 }
 
-/* PROJETS */
-.projet {
-  margin-bottom: 120px; /* espace entre les projets */
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.projet img {
-  border-radius: 10px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-.projet img:hover {
-  transform: scale(1.02);
-}
-
-/* GRILLE DES APPLICATIONS / PROGRAMMES */
+/* -------------------- GRILLE DES APPLICATIONS -------------------- */
 .app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -131,7 +116,7 @@ body {
   margin: 0;
 }
 
-/* BOUTON NÉON */
+/* -------------------- BOUTON NÉON -------------------- */
 .neon-btn {
   display: inline-block;
   font-size: 14px;      
@@ -154,7 +139,7 @@ body {
               0 0 6px var(--accent);
 }
 
-/* CONTACT */
+/* -------------------- CONTACT -------------------- */
 #contact {
   margin-top: 100px;
   text-align: center;
@@ -166,7 +151,7 @@ body {
   font-family: 'Monomod';
 }
 
-/* FOOTER */
+/* -------------------- FOOTER -------------------- */
 footer {
   background: var(--panel);
   color: var(--muted);
@@ -177,32 +162,104 @@ footer {
   border-top: 1px solid #333;
 }
 
-/* TEXTES ET LIENS DES PROJETS */
-.section-projet {
-  font-size: 1.2rem;
-  line-height: 1.8;
+/* -------------------- CARTES (si tu gardes Vue) -------------------- */
+.appli-vue .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
-.section-projet h4 {
+.project-card {
+  width: 60%;
+  background-color: #111;
+  border: 2px solid #0f0;
+  border-radius: 15px;
+  color: #0f0;
+  box-shadow: 0 0 15px #0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #0f0;
+}
+
+.project-card .btn {
+  color: #0f0;
+  border: 1px solid #0f0;
+}
+
+.project-card .btn:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;              /* passe à la ligne si besoin */
+  justify-content: center;      /* centre toutes les cartes */
+  gap: 20px;                    /* espace entre les cartes */
+  padding: 20px;
+}
+
+.skill-card {
+  background-color: #1a1a1a;    /* couleur de fond de la carte */
+  color: #00ff00;               /* texte vert */
+  border-radius: 12px;          /* coins arrondis */
+  padding: 20px;
+  width: 150px;                 /* largeur fixe de la carte */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* ombre pour relief */
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);  /* effet au survol */
+}
+
+.skill-img {
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+/* -------------------- À PROPOS -------------------- */
+#apropos {
+  background: var(--panel); /* fond sombre comme tes cartes */
+  border: 2px solid var(--accent); /* contour néon vert */
+  border-radius: 20px;
+  padding: 60px 20px;
+  margin: 80px auto;
+  max-width: 1000px;
+  color: #0f0; /* texte vert néon */
+  text-align: left;
+}
+
+#apropos h2, #apropos h3 {
   color: var(--accent);
-  font-size: 1.4rem;
   font-family: 'Monomod';
-  margin-top: 1.2rem;
 }
 
-#Portfolio {
-  font-size: 4vw;
-  font-weight: 600;
+#apropos p {
+  font-family: 'space-grotesk';
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #bdf5b9; /* vert clair pour le texte */
 }
 
-.section-projet ul a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
+#apropos img {
+  max-width: 100%;
+  ;
+  box-shadow: 0 0 15px #0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section-projet ul a:hover {
-  color: #fff;
-  text-decoration: underline;
+#apropos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0f0;
 }
+
+
 

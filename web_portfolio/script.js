@@ -4,27 +4,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Animation sur chaque projet
-document.querySelectorAll(".row.align-items-center").forEach((section, i) => {
-  let fromX;
 
-  if (i % 2 === 0) {
-    fromX = -150; // sections paires → partent de la gauche
-  } else {
-    fromX = 150;  // sections impaires → partent de la droite
-  }
-
-  gsap.from(section, {
-    x: fromX,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: section,
-      start: "top 80%",
-      toggleActions: "play none none reverse"
-    }
-  });
-});
   gsap.from(".hero h1", {
     scrollTrigger: {
       trigger: ".hero",
@@ -124,3 +104,33 @@ const app = Vue.createApp({
 });
 
 app.mount(".appli-vue");
+
+  // Animation du texte
+  gsap.from("#apropos .col-md-6.text-center ~ .col-md-6", {});
+
+  // Texte de gauche
+  gsap.from("#apropos .col-md-6:not(.text-center)", {
+    scrollTrigger: {
+      trigger: "#apropos",
+      start: "top 80%", // quand le haut de la section arrive à 80% de l'écran
+      toggleActions: "play none none reverse",
+    },
+    x: -150,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // Image de droite
+  gsap.from("#apropos .col-md-6.text-center", {
+    scrollTrigger: {
+      trigger: "#apropos",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    x: 150,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+    delay: 0.2
+  });
