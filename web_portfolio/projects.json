@@ -33,7 +33,7 @@
       "image/pagerouge2.png",
       "image/pagerouge3.png"
     ],
-    "link": "page-rouge.html"
+    "link": "pagerouge.html"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "image/banditgo2.png",
       "image/banditgo3.png"
     ],
-    "link": "bandit.html"
+    "link": "banditgo.html"
   },
   {
     "id": 6,

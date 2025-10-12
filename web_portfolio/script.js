@@ -1,39 +1,34 @@
-
-
-// Activer ScrollTrigger
+// === Activation de GSAP et ScrollTrigger ===
 gsap.registerPlugin(ScrollTrigger);
 
-// Animation sur chaque projet
+// === Animation titre Hero ===
+gsap.from(".hero h1", {
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 80,
+  duration: 1.2,
+  ease: "power3.out",
+  onComplete: () => {
+    // Effet néon pulsant
+    gsap.to(".hero h1", {
+      textShadow: "0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 80px #00ff88",
+      repeat: -1,
+      yoyo: true,
+      duration: 1.5,
+      ease: "sine.inOut"
+    });
+  }
+});
 
-  gsap.from(".hero h1", {
-    scrollTrigger: {
-      trigger: ".hero",
-      start: "top 80%",
-    },
-    opacity: 0,
-    y: 80,
-    duration: 1.2,
-    ease: "power3.out",
-    onComplete: () => {
-      // Effet néon pulsant en boucle
-      gsap.to(".hero h1", {
-        textShadow: "0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 80px #00ff88",
-        repeat: -1,
-        yoyo: true,
-        duration: 1.5,
-        ease: "sine.inOut"
-      });
-    }
-  });
+// === Timeline GSAP pour le texte d’intro ===
+const tl = gsap.timeline({ defaults: { duration: 0.6, ease: "power3.out" } });
+tl.to(".char", { opacity: 1, y: 0, stagger: 0.05 })
+  .from("#hero-text p", { opacity: 0, y: 20, duration: 1 }, "0.3");
 
-
-  // Timeline GSAP
-  const tl = gsap.timeline({defaults: {duration: 0.6, ease: "power3.out"}});
-
-  tl.to(".char", {opacity: 1, y: 0, stagger: 0.05})
-    .from("#hero-text p", {opacity: 0, y: 20, duration: 1}, "0.3");
-
-// COMPTEURS DE COMPÉTENCES AVEC VUE.JS ET GSAP
+// === Application Vue ===
 const app = Vue.createApp({
   data() {
     return {
@@ -50,9 +45,10 @@ const app = Vue.createApp({
         { name: "WordPress", level: 65, current: 0, image: "image/wordpress.png" },
         { name: "Figma", level: 78, current: 0, image: "image/figma.png" }
       ]
-    }
+    };
   },
   methods: {
+    // Animation des compteurs de compétences
     startAnimation() {
       this.programs.forEach((program, index) => { 
         gsap.to(program, {
@@ -65,11 +61,19 @@ const app = Vue.createApp({
           }
         });
       });
+    },
+
+    // ✅ Ouvrir la bonne page du projet
+    openProject(link) {
+      // Si tu veux que la page s'ouvre dans le même onglet :
+      window.location.href = link;
+
+      // Ou si tu veux dans un nouvel onglet :
+      // window.open(link, "_blank");
     }
-    
   },
   mounted() {
-    // Fetch projets
+    // === Charger les projets depuis le JSON ===
     fetch("projects.json")
       .then(res => res.json())
       .then(data => {
@@ -81,7 +85,7 @@ const app = Vue.createApp({
         this.message = "Erreur lors du chargement des projets";
       });
 
-    // GSAP ScrollTrigger pour programmes
+    // === Animation GSAP pour les programmes ===
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       trigger: "#skills-section",
@@ -103,34 +107,34 @@ const app = Vue.createApp({
   }
 });
 
+// Monter l’application Vue
 app.mount(".appli-vue");
 
-  // Animation du texte
-  gsap.from("#apropos .col-md-6.text-center ~ .col-md-6", {});
+// === Animations “À propos” ===
 
-  // Texte de gauche
-  gsap.from("#apropos .col-md-6:not(.text-center)", {
-    scrollTrigger: {
-      trigger: "#apropos",
-      start: "top 80%", // quand le haut de la section arrive à 80% de l'écran
-      toggleActions: "play none none reverse",
-    },
-    x: -150,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out"
-  });
+// Texte de gauche
+gsap.from("#apropos .col-md-6:not(.text-center)", {
+  scrollTrigger: {
+    trigger: "#apropos",
+    start: "top 80%",
+    toggleActions: "play none none reverse",
+  },
+  x: -150,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out"
+});
 
-  // Image de droite
-  gsap.from("#apropos .col-md-6.text-center", {
-    scrollTrigger: {
-      trigger: "#apropos",
-      start: "top 80%",
-      toggleActions: "play none none reverse",
-    },
-    x: 150,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-    delay: 0.2
-  });
+// Image de droite
+gsap.from("#apropos .col-md-6.text-center", {
+  scrollTrigger: {
+    trigger: "#apropos",
+    start: "top 80%",
+    toggleActions: "play none none reverse",
+  },
+  x: 150,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  delay: 0.2
+});

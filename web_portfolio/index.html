@@ -84,13 +84,18 @@
           <p class="card-text text-muted">{{ project.description }}</p>
         </div>
 
-        <div class="card-footer bg-transparent border-0 text-center">
-           <button class="neon-btn">VOIR</button>
+    <div class="card-footer bg-transparent border-0 text-center">
+  <button class="neon-btn" @click="openProject(project.link)">VOIR</button>
+</div>
+
+</div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 
 
