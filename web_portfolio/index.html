@@ -81,7 +81,8 @@
 
         <div class="card-body text-center">
           <h5 class="card-title fw-bold">{{ project.title }}</h5>
-          <p class="card-text text-muted">{{ project.description }}</p>
+          <p class="card-text ">{{ project.description }}</p>
+          
         </div>
 
     <div class="card-footer bg-transparent border-0 text-center">
@@ -90,11 +91,25 @@
 
 </div>
 
+
+
         </div>
+        <div id="skills-section" class="my-5">
+    <h2 class="section-title">Intérêt</h2>
+    <div class="skills-container">
+      <div v-for="prog in programs" :key="prog.name" class="skill-card">
+        <img :src="prog.image" :alt="prog.name" class="skill-img">
+        <h5>{{ prog.name }}</h5>
+        <p class="counter">{{ prog.current }}%</p>
       </div>
     </div>
   </div>
-</div>
+
+
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -139,19 +154,7 @@
 
     <!-- SECTION À PROPOS -->
 
-
-<div id="skills-section">
-  <h2 class="section-title">intéret</h2>
-  <div class="skills-container">
-    <div v-for="prog in programs" :key="prog.name" class="skill-card">
-      <img :src="prog.image" :alt="prog.name" class="skill-img">
-      <h5>{{ prog.name }}</h5>
-      <p class="counter">{{ prog.current }}%</p>
-    </div>
-  </div>
-</div>
-
-  
+ 
  <section class="container my-5" id="apropos">
   <h2 class="section-title text-center mb-4">À propos</h2>
   <div class="row align-items-center">

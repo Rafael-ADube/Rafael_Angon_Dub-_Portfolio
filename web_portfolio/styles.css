@@ -172,12 +172,14 @@ footer {
 
 .project-card {
   width: 60%;
-  background-color: #111;
-  border: 2px solid #0f0;
+  background-color: var(--panel);  /* fond sombre */
+  border: 2px solid #0f0;          /* bordure néon verte */
   border-radius: 15px;
-  color: #0f0;
+  color: #0f0;                      /* texte par défaut */
   box-shadow: 0 0 15px #0f0;
+  padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
 .project-card:hover {
@@ -185,14 +187,28 @@ footer {
   box-shadow: 0 0 25px #0f0;
 }
 
+.project-card h5 {
+  color: #0f0;       /* titre vert néon */
+  font-family: 'Monomod';
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #e1e2e1;    
+  font-family: 'space-grotesk';
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 .project-card .btn {
   color: #0f0;
   border: 1px solid #0f0;
+  margin-top: 10px;
 }
 
 .project-card .btn:hover {
   background-color: #0f0;
-  color: #000;
+  color: var(--bg);
 }
 
 

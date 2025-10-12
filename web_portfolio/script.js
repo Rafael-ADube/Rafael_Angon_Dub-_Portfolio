@@ -48,7 +48,6 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    // Animation des compteurs de compétences
     startAnimation() {
       this.programs.forEach((program, index) => { 
         gsap.to(program, {
@@ -62,37 +61,42 @@ const app = Vue.createApp({
         });
       });
     },
-
-    // ✅ Ouvrir la bonne page du projet
     openProject(link) {
-      // Si tu veux que la page s'ouvre dans le même onglet :
-      window.location.href = link;
-
-      // Ou si tu veux dans un nouvel onglet :
-      // window.open(link, "_blank");
+      window.open(link, "_blank");
     }
   },
   mounted() {
-    // === Charger les projets depuis le JSON ===
+    // Charger projets
     fetch("projects.json")
       .then(res => res.json())
       .then(data => {
         this.projects = data;
         this.loading = false;
+
+        // On peut animer les projets après qu’ils soient rendus
+        gsap.from(".card", {
+          opacity: 0,
+          y: 50,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power2.out"
+        });
       })
       .catch(err => {
         console.error(err);
         this.message = "Erreur lors du chargement des projets";
       });
 
-    // === Animation GSAP pour les programmes ===
+    // Animation compétences
     gsap.registerPlugin(ScrollTrigger);
+
     ScrollTrigger.create({
       trigger: "#skills-section",
       start: "top 90%",
       onEnter: () => this.startAnimation()
     });
 
+    // Animation images compétences
     gsap.from("#skills-section img", {
       scrollTrigger: {
         trigger: "#skills-section",
@@ -105,14 +109,9 @@ const app = Vue.createApp({
       ease: "power2.out"
     });
   }
-});
-
-// Monter l’application Vue
-app.mount(".appli-vue");
+}).mount(".appli-vue");
 
 // === Animations “À propos” ===
-
-// Texte de gauche
 gsap.from("#apropos .col-md-6:not(.text-center)", {
   scrollTrigger: {
     trigger: "#apropos",
@@ -125,7 +124,6 @@ gsap.from("#apropos .col-md-6:not(.text-center)", {
   ease: "power3.out"
 });
 
-// Image de droite
 gsap.from("#apropos .col-md-6.text-center", {
   scrollTrigger: {
     trigger: "#apropos",
