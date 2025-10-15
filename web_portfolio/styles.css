@@ -141,7 +141,7 @@ body {
 
 /* -------------------- CONTACT -------------------- */
 #contact {
-  margin-top: 100px;
+  margin-top: 160px;
   text-align: center;
 }
 
@@ -171,7 +171,7 @@ footer {
 }
 
 .project-card {
-  width: 60%;
+  width: 80%;
   background-color: var(--panel);  /* fond sombre */
   border: 2px solid #0f0;          /* bordure néon verte */
   border-radius: 15px;
