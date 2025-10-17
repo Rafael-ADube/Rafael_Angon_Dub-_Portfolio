@@ -273,3 +273,7 @@ footer {
   color: #bdf5b9;
   margin-top: 0; /* rapproche du titre */
 }
+.small-img {
+  width: 800px; /* ou autre taille */
+  height: auto; /* conserve les proportions */
+}
