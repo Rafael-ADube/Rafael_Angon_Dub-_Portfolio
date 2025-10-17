@@ -28,6 +28,8 @@ body {
   color: var(--muted);
   font-family: "space-grotesk";
   line-height: 1.6;
+  
+
 }
 
 /* -------------------- TITRES -------------------- */
@@ -216,11 +218,13 @@ footer {
 
 .skills-container {
   display: flex;
-  flex-wrap: wrap;              /* passe à la ligne si besoin */
-  justify-content: center;      /* centre toutes les cartes */
-  gap: 20px;                    /* espace entre les cartes */
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* avant 20px */
+  padding: 40px; /* un peu plus d’air autour */
 }
+
+
 
 .skill-card {
   background-color: #1a1a1a;    /* couleur de fond de la carte */
@@ -242,40 +246,30 @@ footer {
   margin-bottom: 10px;
 }
 /* -------------------- À PROPOS -------------------- */
+
 #apropos {
-  background: var(--panel); /* fond sombre comme tes cartes */
-  border: 2px solid var(--accent); /* contour néon vert */
+  background: var(--panel);
+  border: 2px solid var(--accent);
   border-radius: 20px;
-  padding: 60px 20px;
-  margin: 80px auto;
+  padding: 10px 20px 20px ; /* réduit le padding en haut */
+  margin: 25px auto; /* réduit l’espace autour */
   max-width: 1000px;
-  color: #0f0; /* texte vert néon */
+  color: #0f0;
   text-align: left;
 }
 
-#apropos h2, #apropos h3 {
+#apropos h2,
+#apropos h3 {
   color: var(--accent);
   font-family: 'Monomod';
+  text-align: center;
+  margin-top: 0; /* empêche le titre d’être trop bas */
 }
 
 #apropos p {
   font-family: 'space-grotesk';
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #bdf5b9; /* vert clair pour le texte */
+  color: #bdf5b9;
+  margin-top: 0; /* rapproche du titre */
 }
-
-#apropos img {
-  max-width: 100%;
-  ;
-  box-shadow: 0 0 15px #0f0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#apropos img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #0f0;
-}
-
-
-

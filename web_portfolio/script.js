@@ -139,3 +139,4 @@ const app = Vue.createApp({
 });
 // === Montage de l’application Vue ===
 app.mount(".appli-vue");
+
