@@ -23,6 +23,7 @@ gsap.from(".hero h1", {
   }
 });
 
+
 // === Timeline GSAP pour le texte d’intro ===
 const tl = gsap.timeline({ defaults: { duration: 0.6, ease: "power3.out" } });
 tl.to(".char", { opacity: 1, y: 0, stagger: 0.05 })

@@ -177,7 +177,7 @@ footer {
   background-color: var(--panel);  /* fond sombre */
   border: 2px solid #0f0;          /* bordure néon verte */
   border-radius: 15px;
-  color: #0f0;                      /* texte par défaut */
+                       /* texte par défaut */
   box-shadow: 0 0 15px #0f0;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -198,7 +198,7 @@ footer {
 .project-card p {
   color: #e1e2e1;    
   font-family: 'space-grotesk';
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
