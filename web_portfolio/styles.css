@@ -27,6 +27,7 @@ body {
   background: var(--bg);
   color: var(--muted);
   font-family: "space-grotesk";
+  font-size: large;
   line-height: 1.6;
   
 
@@ -276,4 +277,19 @@ footer {
 .small-img {
   width: 800px; /* ou autre taille */
   height: auto; /* conserve les proportions */
+}
+#portfolio-section {
+  background: var(--panel);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#PORTFOLIO {
+  font-size: 4vw;
+  font-weight: 600;
+  color: var(--accent);
+  opacity: 0;
+  font-family: 'Monomod';
 }

@@ -54,15 +54,33 @@ gsap.from("#apropos .col-md-6.text-center", {
   ease: "power3.out",
   delay: 0.2
 });
-
-// === Application Vue ===// aide du tutora pour l'idéé du pourcentage
+gsap.to("#PORTFOLIO", 5, {
+  delay: 1.5,
+  scrambleText: {
+    text: "bienvuenue dans mon portfolio",
+    rightToLeft: true,
+    chars: "lowercase"
+  }
+});
+gsap.to("#PORTFOLIO", {
+  duration: 5,
+  delay: 1.5,
+  opacity: 1,
+  scrambleText: {
+    text: "Bienvenue dans mon portfolio !",
+    rightToLeft: true,
+    chars: "lowercase"
+  },
+  ease: "power2.out"
+});
+// === Application Vue ===// aide du tutorat pour l'idéé du pourcentage
 const app = Vue.createApp({
   data() {
     return {
       loading: true,
       message: "Chargement...",
       projects: [],
-      programs: [
+      programs: [ // nom des des programmes avec niveau et image associée
         { name: "DaVinci", level: 85, current: 0, image: "image/DaVinci_Resolve_Studio.png" },
         { name: "Max", level: 70, current: 0, image: "image/Logo_Max_8_software.jpg" },
         { name: "Photoshop", level: 90, current: 0, image: "image/Adobe_Photoshop_CC_icon.svg.png" },
