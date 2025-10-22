@@ -23,7 +23,6 @@ gsap.from(".hero h1", {
   }
 });
 
-
 // === Timeline GSAP pour le texte d’intro ===
 const tl = gsap.timeline({ defaults: { duration: 0.6, ease: "power3.out" } });
 tl.to(".char", { opacity: 1, y: 0, stagger: 0.05 })
@@ -54,14 +53,8 @@ gsap.from("#apropos .col-md-6.text-center", {
   ease: "power3.out",
   delay: 0.2
 });
-gsap.to("#PORTFOLIO", 5, {
-  delay: 1.5,
-  scrambleText: {
-    text: "bienvuenue dans mon portfolio",
-    rightToLeft: true,
-    chars: "lowercase"
-  }
-});
+
+// === Scramble Text (si plugin disponible)
 gsap.to("#PORTFOLIO", {
   duration: 5,
   delay: 1.5,
@@ -73,14 +66,15 @@ gsap.to("#PORTFOLIO", {
   },
   ease: "power2.out"
 });
-// === Application Vue ===// aide du tutorat pour l'idéé du pourcentage
+
+// === Application Vue ===
 const app = Vue.createApp({
   data() {
     return {
       loading: true,
       message: "Chargement...",
       projects: [],
-      programs: [ // nom des des programmes avec niveau et image associée
+      programs: [
         { name: "DaVinci", level: 85, current: 0, image: "image/DaVinci_Resolve_Studio.png" },
         { name: "Max", level: 70, current: 0, image: "image/Logo_Max_8_software.jpg" },
         { name: "Photoshop", level: 90, current: 0, image: "image/Adobe_Photoshop_CC_icon.svg.png" },
@@ -94,7 +88,6 @@ const app = Vue.createApp({
   },
   methods: {
     startAnimation() {
-      // Évite de relancer si déjà à niveau
       this.programs.forEach((program, index) => {
         if (program.current >= program.level) return;
         gsap.to(program, {
@@ -103,34 +96,31 @@ const app = Vue.createApp({
           delay: index * 0.2,
           ease: "power1.out",
           onUpdate: () => {
-            // arrondir pour affichage propre
             program.current = Math.round(program.current);
           }
         });
       });
-    },// premet d'ouvrir les projets dans un nouvel onglet
+    },
     openProject(link) {
       window.open(link, "_blank");
     }
   },
   mounted() {
-    // Charger projets
     fetch("projects.json")
       .then(res => res.json())
       .then(data => {
         this.projects = data;
         this.loading = false;
 
-        // === Créer triggers APRES que Vue ait inséré le contenu === // demander à chat GPT parce que sinon ça marche pas l' animation ce déclanchait  des le début
         this.$nextTick(() => {
-          // === Animation compétences ===
+          // === ScrollTrigger pour compétences ===
           ScrollTrigger.create({
             trigger: "#skills-section",
             start: "top bottom",
             onEnter: () => this.startAnimation()
           });
 
-          // Animation images compétences (animation directe sur les images)
+          // === Animation images compétences ===
           gsap.from("#skills-section img", {
             scrollTrigger: {
               trigger: "#skills-section",
@@ -143,19 +133,20 @@ const app = Vue.createApp({
             ease: "power2.out"
           });
 
-          // recalcul final pour être sûr
-          ScrollTrigger.refresh();
+          // Délai pour laisser le DOM et images se stabiliser
+          setTimeout(() => {
+            ScrollTrigger.refresh();
+          }, 300);
         });
       })
       .catch(err => {
         console.error(err);
         this.message = "Erreur lors du chargement des projets";
       });
-
-    
-  
   }
 });
-// === Montage de l’application Vue ===
-app.mount(".appli-vue");
 
+// === Monter l’app Vue une fois tout prêt ===
+window.addEventListener("load", () => {
+  app.mount(".appli-vue");
+});
