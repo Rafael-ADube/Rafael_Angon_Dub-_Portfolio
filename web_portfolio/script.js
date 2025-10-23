@@ -132,6 +132,7 @@ const app = Vue.createApp({
             stagger: 0.2,
             ease: "power2.out"
           });
+          
 
           // Délai pour laisser le DOM et images se stabiliser
           setTimeout(() => {
@@ -150,3 +151,4 @@ const app = Vue.createApp({
 window.addEventListener("load", () => {
   app.mount(".appli-vue");
 });
+
