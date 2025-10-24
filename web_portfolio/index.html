@@ -123,18 +123,21 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
 
  <!-- intéret -->
         </div>
-        <div id="skills-section" class="my-5">
-    <h2 class="section-title">Intérêt</h2>
-    <div class="skills-container">
-      <div v-for="prog in programs" :key="prog.name" class="skill-card">
-        <img :src="prog.image" :alt="prog.name" class="skill-img">
-          <!-- va lancer l'animation vue pour le pourcentage  -->
-        <h5>{{ prog.name }}</h5>
-        <p class="counter">{{ prog.current }}%</p>
+   <div id="skills-section" class="my-5">
+  <h2 class="section-title">logiciel</h2>
+  <div class="skills-container">
+    <div v-for="prog in programs" :key="prog.name" class="skill-card text-center">
+      
+      <h5>{{ prog.name }}</h5>
+
+      <!-- Barre de progression -->
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" :style="{ width: prog.current + '%' }"></div>
       </div>
+      
     </div>
   </div>
-
+</div>
 
       </div>
     </div>

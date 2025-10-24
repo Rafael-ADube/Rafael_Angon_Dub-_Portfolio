@@ -75,14 +75,14 @@ const app = Vue.createApp({
       message: "Chargement...",
       projects: [],//va chercher projects.json et tous en l'intérieur
       programs: [//tableau dans lequel les information apparait apres dans mon vue pourcentage
-        { name: "DaVinci", level: 85, current: 0, image: "image/DaVinci_Resolve_Studio.png" },
-        { name: "Max", level: 70, current: 0, image: "image/Logo_Max_8_software.jpg" },
-        { name: "Photoshop", level: 90, current: 0, image: "image/Adobe_Photoshop_CC_icon.svg.png" },
-        { name: "Illustrator", level: 85, current: 0, image: "image/Adobe_Illustrator_CC_icon.svg.png" },
-        { name: "Maya", level: 75, current: 0, image: "image/maya.png" },
-        { name: "Reaper", level: 80, current: 0, image: "image/reaper.jpg" },
-        { name: "WordPress", level: 65, current: 0, image: "image/wordpress.png" },
-        { name: "Figma", level: 78, current: 0, image: "image/figma.png" }
+        { name: "Html", level: 85, current: 0,  },
+        { name: "Css", level: 70, current: 0, },
+        { name: "Javascript", level: 90, current: 0, },
+        { name: "c++", level: 85, current: 0,  },
+        { name: "Maya", level: 75, current: 0,  },
+        { name: "Reaper", level: 80, current: 0,  },
+        { name: "WordPress", level: 65, current: 0, },
+        { name: "Figma", level: 78, current: 0,  }
       ]
     };
   },
@@ -159,7 +159,7 @@ this.$nextTick(() => {//chatgpt ma aider pour utiliser this.$nextTick je suis en
 });
 
 // === Monter l’app Vue une fois tout prêt ===
-window.addEventListener("load", () => {
+
   app.mount(".appli-vue");
-});
+
 
