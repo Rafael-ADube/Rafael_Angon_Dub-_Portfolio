@@ -23,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <!-- lien qui mene au bonne endroit dans la page -->
+            <!-- lien qui mene au bonne endroit dans la page si je click -->
           <a class="nav-link" href="#projets">Projets</a>
           <a class="nav-link" href="#apropos">À propos</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -47,7 +47,7 @@
 
 
     </div>
-  </section>
+  </section>   <!-- a propos -->
 <section id="portfolio-section" class="text-center py-5">
   <div id="PORTFOLIO"></div>
 </section>
@@ -70,7 +70,7 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
 <section id="projets"></section>
  <h2 class="section-title">Projets</h2>
 
-    
+      <!-- va tous chercher dans projects.json -->
 <div class="appli-vue">
   <div v-if="loading" class="text-center my-5">
     <div class="spinner-border text-primary" role="status"></div>
@@ -96,6 +96,7 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
               <img :src="img" class="d-block w-100 img-hover" :alt="project.title + ' image ' + (index + 1)">
             </div>
           </div>
+                 <!-- bouton qui  change les images -->
           <button class="carousel-control-prev" type="button" :data-bs-target="'#carousel' + project.id" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </button>
