@@ -57,7 +57,7 @@ gsap.from("#apropos .col-md-6.text-center", { //animation lorsque je defile dans
 // === Scramble Text 
 gsap.to("#PORTFOLIO", { //animation lorsque je defile dans le a propos ma photo apparait
   duration: 5,
-  delay: 1.5,
+  delay: 0.5,
   opacity: 1,
   scrambleText: {
     text: "Bienvenue dans mon portfolio !",
@@ -77,7 +77,7 @@ const app = Vue.createApp({
       programs: [//tableau dans lequel les information apparait apres dans mon vue pourcentage
         { name: "Html", level: 85, current: 0,  },
         { name: "Css", level: 70, current: 0, },
-        { name: "Javascript", level: 90, current: 0, },
+        { name: "Javascript", level: 50, current: 0, },
         { name: "c++", level: 85, current: 0,  },
         { name: "Maya", level: 75, current: 0,  },
         { name: "Reaper", level: 80, current: 0,  },
@@ -106,7 +106,7 @@ const app = Vue.createApp({
     }
   },
   mounted() {
-    fetch("projects.json") // va chercher les donnée dams projet.json
+    fetch("projects.json") // va chercher les donnée dans projet.json
       .then(res => res.json())
       .then(data => {
         this.projects = data;
@@ -119,17 +119,6 @@ const app = Vue.createApp({
             start: "top bottom",
             onEnter: () => this.startAnimation()
           });
-this.$nextTick(() => {//chatgpt ma aider pour utiliser this.$nextTick je suis ensuite aller voir sur w3school sa ma permis de comprendre que ca permet de faire du apres le chargement de la page 
-  // Réinitialiser les carrousels Bootstrap après rendu Vue
-  document.querySelectorAll('.carousel').forEach(el => {
-    new bootstrap.Carousel(el, {
-      interval: 8000, // 
-      ride: 'carousel',
-      pause: false, 
-      wrap: true
-    });
-  });
-});
 
           // === Animation images compétences ===
           gsap.from("#skills-section img", {
@@ -143,7 +132,36 @@ this.$nextTick(() => {//chatgpt ma aider pour utiliser this.$nextTick je suis en
             stagger: 0.2,
             ease: "power2.out"
           });
-          
+
+          // === Animation projets ===
+     // === Animation GSAP pour chaque carte de projet ===
+gsap.utils.toArray('.project-card').forEach((card, index) => {
+  gsap.from(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out",
+    delay: index * 0.1
+  });
+});
+
+
+          this.$nextTick(() => {//chatgpt ma aider pour utiliser this.$nextTick je suis ensuite aller voir sur w3school sa ma permis de comprendre que ca permet de faire du apres le chargement de la page 
+            // Réinitialiser les carrousels Bootstrap après rendu Vue
+            document.querySelectorAll('.carousel').forEach(el => {
+              new bootstrap.Carousel(el, {
+                interval: 8000, // 
+                ride: 'carousel',
+                pause: false, 
+                wrap: true
+              });
+            });
+          });
 
           // Délai pour laisser le DOM et images se stabiliser
           setTimeout(() => {
@@ -159,7 +177,4 @@ this.$nextTick(() => {//chatgpt ma aider pour utiliser this.$nextTick je suis en
 });
 
 // === Monter l’app Vue une fois tout prêt ===
-
-  app.mount(".appli-vue");
-
-
+app.mount(".appli-vue");

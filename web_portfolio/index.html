@@ -70,7 +70,6 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
 <section id="projets"></section>
  <h2 class="section-title">Projets</h2>
 
-      <!-- va tous chercher dans projects.json -->
 <div class="appli-vue">
   <div v-if="loading" class="text-center my-5">
     <div class="spinner-border text-primary" role="status"></div>
@@ -81,19 +80,20 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
 <div v-else class="container my-5">
   <div class="row g-4">
     <div 
-      v-for="project in projects" 
+      v-for="(project, index) in projects" 
       :key="project.id" 
-      class="col-12 d-flex justify-content-center ">
+      class="col-12 d-flex justify-content-center project-item"
+      :ref="'project-' + index">
       <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden project-card">
         <!-- Carrousel pour images -->
         <div v-if="project.images && project.images.length" :id="'carousel' + project.id" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div 
-              v-for="(img, index) in project.images" 
-              :key="index"    
-              :class="['carousel-item', { active: index === 0 }]" >
+              v-for="(img, imgIndex) in project.images" 
+              :key="imgIndex"    
+              :class="['carousel-item', { active: imgIndex === 0 }]" >
                 <!-- va chercher les images dans le json -->
-              <img :src="img" class="d-block w-100 img-hover" :alt="project.title + ' image ' + (index + 1)">
+              <img :src="img" class="d-block w-100 img-hover" :alt="project.title + ' image ' + (imgIndex + 1)">
             </div>
           </div>
                  <!-- bouton qui  change les images -->
@@ -110,14 +110,19 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
           <h5 class="card-title fw-bold">{{ project.title }}</h5>
            <!-- affiche la description en vue -->
           <p class="card-text ">{{ project.description }}</p>
-          
         </div>
+
   <!-- bouton qui va chercher et ouvrir le bon projet -->
     <div class="card-footer bg-transparent border-0 text-center">
-  <button class="neon-btn" @click="openProject(project.link)">VOIR</button>
-</div>
- 
-</div>
+      <button class="neon-btn" @click="openProject(project.link)">VOIR</button>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
 
 
 
@@ -187,6 +192,7 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
       </div>
       <div class="app"><img src="image/Adobe_After_Effects_CC_icon.svg.png" alt="after effect">
         <p>after effect</p>
+        
       </div>
     </div>
 
