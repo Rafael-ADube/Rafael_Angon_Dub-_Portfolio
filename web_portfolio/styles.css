@@ -161,7 +161,7 @@ a {
 }
 
 /* footer */
-footer {
+.footer {
   background: var(--panel);
   color: var(--muted);
   text-align: center;
@@ -179,60 +179,68 @@ footer {
   gap: 6rem;
 }
 .project-card {
- width: 80%;
+  width: 100%;
   background-color: var(--panel);
   border: 2px solid var(--accent);
   border-radius: 15px;
-  box-shadow: 0 0 10px var(--accent)(0, 255, 0, 0.3); 
-  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* ✅ corrigé */
+  padding: 60px;
   text-align: center;
   transition: 0.3s;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
 }
 
-/* carte des projet quand tu passe decu */
+/* carte des projets quand tu passes dessus */
 .project-card:hover {
-  transform: scale(1);
-  box-shadow: 0 0 30px var(--accent);
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
 }
-/* titre des cartes */
+
+/* titre */
 .project-card h5 {
   color: var(--accent);
   font-family: 'Monomod', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-/* texte des cartes */
+
+/* texte */
 .project-card p {
   color: var(--muted);
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin-bottom: 25px;
 }
-/* bouton des cartes */
-.project-card .btn {
+
+/* bouton */
+.project-card .neon-btn {
   display: inline-block;
-  margin-top: 15px;
   color: var(--accent);
   border: 1px solid var(--accent);
   background: transparent;
-  padding: 8px 16px;
+  padding: 8px 38px; 
   border-radius: 8px;
   transition: 0.3s;
+  margin-top: 20px; 
 }
-/* bouton des cartes quand tu passe decu */
-.project-card .btn:hover {
+
+
+
+.project-card .neon-btn:hover {
   background: var(--accent);
   color: var(--bg);
-   box-shadow: 0 0 10px var(--accent)(0, 255, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
 }
+
+/* image */
 .project-card img {
-  display: block;        
-  margin: 0 auto 10px;   
-  max-width: 100%;       
-  height: auto;         
+  display: block;
+  margin: 0 auto 30px; 
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px var(--accent)(0, 255, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
 }
 
 
@@ -304,6 +312,16 @@ footer {
   opacity: 0;
   font-family: 'Monomod';
 }
+
+/* Version téléphone  */
+@media (max-width: 600px) {
+  #PORTFOLIO {
+    font-size: 8vw; 
+    opacity: 1;      
+    text-align: center; 
+  }
+}
+
 /* ligne qui sépare mes sections */
 .section-divider {
   width: 60%;
@@ -390,7 +408,7 @@ footer {
 }
 
 
-  .collaborations ul li {
+.collaborations ul li {
   margin: 10px 0; 
 }
 

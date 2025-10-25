@@ -5,9 +5,7 @@
     "category": "site web",
     "description": "Un site de critiques cinématographiques.: films, séries et courts métrages. Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
     "images": [
-      "image/metrage.png",
-      "image/métrage2.png",
-      "image/métrage3.png"
+      "image/metrage.png"
     ],
     "link": "metrage.html"
   },
@@ -17,9 +15,7 @@
     "category": "jeu",
     "description": "Jeu narratif en pixel art.",
     "images": [
-      "image/cendre.png",
-      "image/cendre2.png",
-      "image/cendre3.png"
+      "image/cendre.png"
     ],
     "link": "cendre.html"
   },
