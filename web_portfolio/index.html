@@ -15,7 +15,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,8 +43,8 @@
 </div>
 
   <!-- À propos -->
-  <section class="container my-5" id="apropos">
     <h2 class="section-title text-center mb-4">À propos</h2>
+  <section class="container my-5" id="apropos">
     <div class="row align-items-center">
       <div class="col-md-6">
         <h3>Qui suis-je ?</h3>
@@ -80,14 +80,15 @@
               <h5 class="card-title fw-bold">{{ project.title }}</h5>
               <p class="card-text">{{ project.description }}</p>
             </div>
-
+               <!-- le bouton dans chaque carte-->
             <div class="card-footer bg-transparent border-0 text-center">
+                <!-- le @click va ouvrir le bon projet qui est dans projects.json -->
               <button class="neon-btn" @click="openProject(project.link)">VOIR</button>
             </div>
           </div>
         </div>
 
-        <!-- Section compétences (hors v-for) -->
+        <!-- Section compétences ) -->
         <div id="skills-section" class="my-5">
           <h2 class="section-title">Logiciel</h2>
           <div class="skills-container">
@@ -104,23 +105,60 @@
   </section>
 
   <!-- Programmes -->
-  <section class="container my-5">
-    <h2 class="section-title">Programme</h2>
-    <div class="app-grid">
-      <div class="app"><img src="image/DaVinci_Resolve_Studio.png" alt="DaVinci"><p>DaVinci</p></div>
-      <div class="app"><img src="image/Logo_Max_8_software.jpg" alt="Max"><p>Max</p></div>
-      <div class="app"><img src="image/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop"><p>Photoshop</p></div>
-      <div class="app"><img src="image/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator"><p>Illustrator</p></div>
-      <div class="app"><img src="image/maya.png" alt="Maya"><p>Maya</p></div>
-      <div class="app"><img src="image/reaper.jpg" alt="Reaper"><p>Reaper</p></div>
-      <div class="app"><img src="image/wordpress.png" alt="WordPress"><p>WordPress</p></div>
-      <div class="app"><img src="image/figma.png" alt="Figma"><p>Figma</p></div>
-      <div class="app"><img src="image/touchdesigner.png" alt="TouchDesigner"><p>TouchDesigner</p></div>
-      <div class="app"><img src="image/unity.png" alt="Unity"><p>Unity</p></div>
-      <div class="app"><img src="image/phaser-logo.png" alt="Phaser"><p>Phaser</p></div>
-      <div class="app"><img src="image/Adobe_After_Effects_CC_icon.svg.png" alt="After Effects"><p>After Effects</p></div>
-    </div>
-  </section>
+ <section class="container my-5">
+  <h2 class="section-title">Programme</h2>
+  <div class="app-grid">
+    <a href="https://www.blackmagicdesign.com/products/davinciresolve/" class="app" target="_blank">
+      <img src="image/DaVinci_Resolve_Studio.png" alt="DaVinci">
+      <p>DaVinci</p>
+    </a>
+    <a href="https://cycling74.com/products/max/" class="app" target="_blank">
+      <img src="image/Logo_Max_8_software.jpg" alt="Max">
+      <p>Max</p>
+    </a>
+    <a href="https://www.adobe.com/products/photoshop.html" class="app" target="_blank">
+      <img src="image/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop">
+      <p>Photoshop</p>
+    </a>
+    <a href="https://www.adobe.com/products/illustrator.html" class="app" target="_blank">
+      <img src="image/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator">
+      <p>Illustrator</p>
+    </a>
+    <a href="https://www.autodesk.com/products/maya/overview" class="app" target="_blank">
+      <img src="image/maya.png" alt="Maya">
+      <p>Maya</p>
+    </a>
+    <a href="https://www.reaper.fm/" class="app" target="_blank">
+      <img src="image/reaper.jpg" alt="Reaper">
+      <p>Reaper</p>
+    </a>
+    <a href="https://wordpress.org/" class="app" target="_blank">
+      <img src="image/wordpress.png" alt="WordPress">
+      <p>WordPress</p>
+    </a>
+    <a href="https://www.figma.com/" class="app" target="_blank">
+      <img src="image/figma.png" alt="Figma">
+      <p>Figma</p>
+    </a>
+    <a href="https://derivative.ca/" class="app" target="_blank">
+      <img src="image/touchdesigner.png" alt="TouchDesigner">
+      <p>TouchDesigner</p>
+    </a>
+    <a href="https://unity.com/" class="app" target="_blank">
+      <img src="image/unity.png" alt="Unity">
+      <p>Unity</p>
+    </a>
+    <a href="https://phaser.io/" class="app" target="_blank">
+      <img src="image/phaser-logo.png" alt="Phaser">
+      <p>Phaser</p>
+    </a>
+    <a href="https://www.adobe.com/products/aftereffects.html" class="app" target="_blank">
+      <img src="image/Adobe_After_Effects_CC_icon.svg.png" alt="After Effects">
+      <p>After Effects</p>
+    </a>
+  </div>
+</section>
+
 
   <!-- Contact -->
   <section class="container my-5" id="contact">
@@ -130,7 +168,7 @@
         <p>Vous pouvez me contacter pour discuter de projets ou collaborations.</p>
 
         <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
-          <a href="mailto:kostodube@gmail.com" class="neon-btn">Envoyer un email</a>
+          <a href="mailto:kostodube@gmail.com" class="neon-btn">kostodube@gmail.com</a>
           <a href="https://www.indeed.com" target="_blank" class="neon-btn">Voir mon profil Indeed</a>
           <a href="tel:4385075353" class="neon-btn">438-507-5353</a>
           <a href="https://github.com/Rafael-ADube" target="_blank" class="neon-btn">Voir mon GitHub</a>

@@ -24,10 +24,10 @@
 /* le style total du site */
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--bg);/* le style total du site */
   color: var(--muted);
   font-family: "space-grotesk";
-  font-size: large;
+  font-size: large;/* le style total du site */
   line-height: 1.6;
   
 
@@ -35,7 +35,7 @@ body {
 
 /* Titre */
 .section-title {
-  color: var(--accent);
+  color: var(--accent); 
   font-weight: 700;
   text-align: center;
   margin: 150px 0 50px;
@@ -46,7 +46,7 @@ body {
 
 .section-title::after {
   content: "";
-  display: block;
+  display: block;/* le style total du site */
   width: 60px;
   height: 3px;
   background: var(--accent);
@@ -118,6 +118,12 @@ body {
   color: var(--muted);
   margin: 0;
 }
+a {
+  text-decoration: none;     /* enlève le soulignement bleu  des lien clicable*/
+}
+
+
+
 
 /* Bouton néon */
 .neon-btn {
@@ -247,6 +253,7 @@ footer {
   background-color:var(--panel);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
 }
 
 .progress-bar-fill {
@@ -364,4 +371,33 @@ footer {
  
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+}
+.collaborations {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.collaborations h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.collaborations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.collaborations ul li {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.collaborations ul li a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: color 0.3s;
+}
+
+.collaborations ul li a:hover {
+  color: var(--accent);
 }

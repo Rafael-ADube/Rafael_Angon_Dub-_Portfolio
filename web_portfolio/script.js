@@ -5,19 +5,19 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".hero h1", {
   scrollTrigger: {
     trigger: ".hero",
-    start: "top 80%",
+    start: "top 80%",// l'aniamtion commence 
   },
   opacity: 0,
-  y: 80,
+  y: 80,// déplacement de mon aniamtion vers le haut
   duration: 1.2,
-  ease: "power3.out",
+  ease: "power3.out",// rend mon aniamtion fluid
   onComplete: () => {
     // Effet néon pulsant
     gsap.to(".hero h1", {
       textShadow: "0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 80px #00ff88",
-      repeat: -1,
-      yoyo: true,
-      duration: 1.5,
+      repeat: -1,//ce répéte a l'infini
+      yoyo: true, // effet d'aller retour
+      duration: 1.5,// la durée de l'aniamtion
       ease: "sine.inOut"
     });
   }
@@ -72,23 +72,19 @@ const app = Vue.createApp({
   data() {
     return {
       loading: true,
-      message: "Chargement...",
+      message: "Chargement...",//affiche le message de
       projects: [],//va chercher projects.json et tous en l'intérieur
       programs: [//tableau dans lequel les information apparait apres dans mon vue pourcentage
-        { name: "Html", level: 85, current: 0,  },
-        { name: "Css", level: 70, current: 0, },
+        { name: "Html", level: 85, current: 0,  }, //level le pourcentage ou ce rend la ligne
+        { name: "Css", level: 70, current: 0, },//
         { name: "Javascript", level: 50, current: 0, },
-        { name: "c++", level: 85, current: 0,  },
-        { name: "Maya", level: 75, current: 0,  },
-        { name: "Reaper", level: 80, current: 0,  },
-        { name: "WordPress", level: 65, current: 0, },
-        { name: "Figma", level: 78, current: 0,  }
+        { name: "c++", level: 20, current: 0,  },
       ]
     };
   },
   methods: {//animation du pourcentage des compétence
-    startAnimation() {
-      this.programs.forEach((program, index) => {
+    startAnimation() {//startAnimation
+      this.programs.forEach((program, index) => {//le forEach le fait pour tous les ligne de pourcentage
         if (program.current >= program.level) return;
         gsap.to(program, {
           current: program.level,
@@ -101,9 +97,11 @@ const app = Vue.createApp({
         });
       });
     },
-    openProject(link) {//va chercher dans .json
-      window.open(link, "_blank");//a chaque fois que j'ouvre un projet ca ouvre dans une nouvelle page
-    }
+  openProject(link) { // va chercher dans .json
+  // Ouvre le projet dans la même page
+  window.location.href = link;
+},
+
   },
   mounted() {
     fetch("projects.json") // va chercher les donnée dans projet.json
@@ -170,11 +168,11 @@ gsap.utils.toArray('.project-card').forEach((card, index) => {
         });
       })
       .catch(err => {
-        console.error(err);
+        console.error(err);// vois si il ya un erreur
         this.message = "Erreur lors du chargement des projets";
       });
   }
 });
 
-// === Monter l’app Vue une fois tout prêt ===
+// Monter l’app Vue une fois tout prêt 
 app.mount(".appli-vue");
