@@ -67,6 +67,7 @@ gsap.to("#PORTFOLIO", { //animation lorsque je defile dans le a propos ma photo 
   ease: "power2.out"
 });
 
+
 // === Application Vue ===
 const app = Vue.createApp({
   data() {
