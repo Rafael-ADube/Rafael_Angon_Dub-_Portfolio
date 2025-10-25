@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,190 +12,193 @@
   <!-- STYLES -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="index.html">retour</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">retour</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-<!-- HERO -->
-<section class="hero bg-dark text-white text-center py-5 mb-5">
-  <div class="container" id="hero-text">
-    <h1 class="display-4 fw-bold">Métrage</h1>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero bg-dark text-white text-center py-5 mb-5">
+    <div class="container" id="hero-text">
+      <h1 class="display-4 fw-bold">Métrage</h1>
+    </div>
+  </section>
 
-<!-- MAIN -->
-<main class="container my-5">
+  <!-- MAIN -->
+  <main class="container my-5">
 
-  <!-- CAROUSEL -->
-  <div id="carouselProjet" class="carousel slide mb-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="3"></button>
+    <!-- CAROUSEL -->
+    <div id="carouselProjet" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="3"></button>
+      </div>
+
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="image/metrage.png" class="d-block w-100" alt="metrage">
+        </div>
+        <div class="carousel-item">
+          <img src="image/métrage2.png" class="d-block w-100" alt="métrage2">
+        </div>
+        <div class="carousel-item">
+          <img src="image/métrage3.png" class="d-block w-100" alt="métrage3">
+        </div>
+        <div class="carousel-item">
+          <img src="image/métrage4.png" class="d-block w-100" alt="métrage4">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
     </div>
 
-    <div class="carousel-inner rounded shadow">
-      <div class="carousel-item active">
-        <img src="image/metrage.png" class="d-block w-100" alt="metrage">
+    <!-- INFOS PROJET -->
+    <section>
+      <h2 class="section-title">Programmes utilisés</h2>
+      <div class="app-grid">
+        <div class="app">
+          <img src="image/wordpress.png" alt="WordPress">
+          <p>WordPress</p>
+        </div>
+        <div class="app">
+          <img src="image/figma.png" alt="Figma">
+          <p>Figma</p>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="image/métrage2.png" class="d-block w-100" alt="métrage2">
-      </div>
-      <div class="carousel-item">
-        <img src="image/métrage3.png" class="d-block w-100" alt="métrage3">
-      </div>
-      <div class="carousel-item">
-        <img src="image/métrage4.png" class="d-block w-100" alt="métrage4">
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Précédent</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Suivant</span>
-    </button>
-  </div>
-
-  <!-- INFOS PROJET -->
-<section>
-  <h2 class="section-title">Programmes utilisés</h2>
-  <div class="app-grid">
-    <div class="app">
-      <img src="image/wordpress.png" alt="WordPress">
-      <p>WordPress</p>
-    </div>
-    <div class="app">
-      <img src="image/figma.png" alt="Figma">
-      <p>Figma</p>
-    </div>
-  </div>
-</section>
-<!-- SECTION LIEN VERS LE PROJET -->
-<section class="section-lien text-center my-5">
-  <h2 class="section-title">Voir le projet</h2>
-  <p>Découvrez le site complet du projet <strong>Métrage</strong> en ligne :</p>
-  <a href="https://201939593.tim-momo.com/TP3/fr/" target="_blank" class="neon-btn">
-    Accéder a Métrage
-  </a>
-
-</section>
-
-<!-- SECTION LIEN VERS LES portfolio de mes coéquiper -->
-<section class="section-projet">
-  <h4>collaborations</h4>
-<ul>
-  <ul>
-  <li><a href="https://portfolio-alexandre.com" target="_blank" style="color: var(--accent);">Alexandre Gendron</a></li>
-  <li><a href="https://portfolio-miakel.com" target="_blank" style="color: var(--accent);">Miakel Arsenault</a></li>
-</ul>
-
-</ul>
-  <section>
-  <!-- Objectif du projet -->
- <h2 class="section-title">Objectif du projet</h2>
-<p>
-  Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative,
-  en allant au-delà des consignes initiales pour offrir une plateforme fonctionnelle et engageante.
-</p>
-
-
-<section class="project-description">
-
-  <p>
-    Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative, en allant au-delà des consignes initiales pour offrir une plateforme fonctionnelle et engageante.
-  </p>
-
- 
-
-  <h2 class="section-title">Description du projet</h2>
-  <p>
-    <strong>Métrage</strong> repose sur un développement avec WordPress, accompagné d’un design minimaliste et épuré qui met le contenu au centre de l’expérience utilisateur. La plateforme permet aux utilisateurs de lire et écrire des critiques sur une sélection variée de contenus : courts-métrages, longs-métrages et séries.
-  </p>
-  <p>
-    Chaque fiche de film ou série comprend un synopsis, les crédits principaux, des informations sur le réalisateur, ainsi qu’un système de notation et de commentaires. Une API de <strong>Tomato Rank</strong> (inspirée ou connectée à Rotten Tomatoes) a été intégrée afin de fournir des évaluations externes et renforcer la crédibilité des fiches.
-  </p>
-  <p>
-    Le site propose également une section communautaire où les utilisateurs peuvent interagir via des forums ou des discussions sous les critiques, créant ainsi un espace vivant et participatif.
-  </p>
-
-  <h2 class="section-title">Design et accessibilité</h2>
-  <p>
-    Le design de la plateforme a été entièrement prototypé avec <strong>Figma</strong>. Nous avons choisi une esthétique minimaliste pour favoriser une navigation claire, intuitive et sans distraction. L’accent a été mis sur la lisibilité, la hiérarchisation de l’information et la compatibilité mobile.
-  </p>
-  <p>
-    L’interface est entièrement responsive et multilingue (français et anglais), ce qui permet une accessibilité élargie à un public international.
-  </p>
-
-  
+    </section>
 
 
 
+    </section>
+
+    <!-- SECTION LIEN VERS LES portfolio de mes coéquiper -->
+    <section class="section-projet">
+      <h4>collaborations</h4>
+      <ul>
+        <ul>
+          <li><a href="https://portfolio-alexandre.com" target="_blank" style="color: var(--accent);">Alexandre
+              Gendron</a></li>
+          <li><a href="https://portfolio-miakel.com" target="_blank" style="color: var(--accent);">Miakel Arsenault</a>
+          </li>
+        </ul>
+
+      </ul>
+      <section>
+        <!-- Objectif du projet -->
+        <h2 class="section-title">Objectif du projet</h2>
+        <p>
+          Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative,
+          en allant au-delà des consignes initiales pour offrir une plateforme fonctionnelle et engageante.
+        </p>
 
 
+        <section class="project-description">
+
+          <p>
+            Ce projet vise à créer une plateforme multimédia complète, mêlant programmation, design et créativité.
+            L’objectif était d’aller au-delà des consignes pour proposer un site fonctionnel, engageant et agréable à
+            utiliser.
+          </p>
+
+          <h2 class="section-title">Description du projet</h2>
+          <p>
+            Métrage est un site de critiques de films, de séries et de courts métrages qui a été fait par trois amis :
+            Rafael, Alexandre et Mikael.
+          </p>
+          <p>
+            Sur le site, ce sont souvent les films que nous aimons ou que nous avons vus récemment.
+          </p>
+          <p>
+            Nous avons réalisé ce site dans le cours de Web 4, dans lequel nous avons appris à utiliser WordPress pour
+            le créer.
+          </p>
 
 
-<h2 class="section-title">Étape 1 : Recherche et inspiration</h2>
-  <p>
-    Nous avons analysé plusieurs plateformes de critiques et de diffusion comme Letterboxd, IMDb ou Mubi, tout en échangeant avec des cinéastes indépendants afin de cerner leurs besoins spécifiques. Cela nous a permis de définir des fonctionnalités pertinentes et originales.
-  </p>
-  <img src="image/moodboard1.png" alt="moodboardmetrage" class="small-img">
+          <h2 class="section-title">Étape 1 : Recherche et inspiration</h2>
+          <p>
+            Pour la recherche, nous avons consulté plusieurs sites de critiques de cinéma tels qu’IMDb, Letterboxd,
+            AlloCiné et d’autres, afin d’analyser la manière dont leurs sites et leurs critiques étaient conçus.
+          </p>
+          <img src="image/moodboard1.png" alt="moodboardmetrage" class="small-img">
 
-  <h2 class="section-title">Étape 2 : Planification et design</h2>
-  <p>
-    À l’aide de Figma, nous avons élaboré des wireframes et des maquettes haute fidélité. Cette étape a permis de structurer efficacement l’interface et d’anticiper les comportements de navigation des utilisateurs.
-  </p>
-  <img src="image/métrage4.png" alt="figma metrage" class="small-img">
-  <h2 class="section-title">Étape 3 : développement</h2>
-  <p>
-    Le site a été construit à l’aide de WordPress, choisi pour sa flexibilité, sa gestion de contenu simplifiée et sa compatibilité avec des extensions multilingues. Nous avons également intégré une API pour les scores critiques, optimisé les performances, et configuré les différentes sections dynamiques (critiques, profils, catégories...).
-  </p>
-<img src="image/métrage4.png" alt="figma metrage" class="small-img">
-  <h3>Étape 4 : Tests et ajustements</h3>
-  <p>
-    Plusieurs tests utilisateurs ont été menés sur différents appareils (desktop, tablette, smartphone) afin de garantir une expérience fluide et accessible. Les retours ont permis d’optimiser certains éléments graphiques, de corriger des bugs et d'améliorer la navigation.
-  </p>
+          <h2 class="section-title">Étape 2 : Planification et design</h2>
+          <p>
+            Pour le design du site, nous sommes allés sur Figma pour en créer la maquette. Nous savions que nous
+            voulions concevoir un site à la fois simple et esthétique, c’est pourquoi nous avons choisi un style
+            minimaliste. Les deux seules couleurs du site sont le noir et le blanc.
+          </p>
+          <img src="image/métrage4.png" alt="figma metrage" class="small-img">
 
-  <h2 class="section-title">Conclusion</h2>
-  <p>
-    <strong>Métrage</strong> est un projet complet qui allie design réfléchi, programmation efficace et approche créative. En proposant une plateforme bilingue, accessible et participative, il répond à la fois aux besoins des cinéphiles et des créateurs indépendants. Ce projet démontre notre capacité à gérer un projet web de bout en bout, en alliant outils professionnels (Figma, WordPress, API) et vision artistique.
-  </p>
+          <h2 class="section-title">Étape 3 : Développement</h2>
+          <p>
+            Pour le développement du site, nous avons réalisé plusieurs étapes sur WordPress. Nous avons commencé par
+            installer un template existant, que nous avons ensuite modifié selon nos besoins. Nous avons ajouté toutes
+            les pages nécessaires : une page pour les tops, les films, les séries, les courts-métrages, ainsi qu’une
+            page 404, etc.
 
-</section>
+            Nous avons dû reproduire ces étapes une seconde fois afin que le site soit disponible en français et en
+            anglais. Nous avons également intégré une API, en choisissant le site Rotten Tomatoes pour obtenir les notes
+            des films. Enfin, nous avons ajouté une animation avec GSAP pour rendre le site plus interactif et
+            attrayant, afin qu’il soit à la fois fonctionnel et esthétique.
+          </p>
+          <img src="image/métrage4.png" alt="figma metrage" class="small-img">
+
+          <h3>Étape 4 : Tests et ajustements</h3>
+          <p>
+            Plusieurs tests utilisateurs ont été réalisés sur desktop, tablette et smartphone pour garantir une
+            expérience fluide et accessible. Les retours ont permis d’ajuster certains éléments graphiques, de corriger
+            des bugs et d’améliorer la navigation.
+          </p>
+
+          <h2 class="section-title">Conclusion</h2>
+          <p>
+            <strong>Métrage</strong> est un projet complet qui combine design réfléchi, programmation efficace et
+            créativité. En proposant une plateforme bilingue, accessible et participative, le site répond aux besoins
+            des cinéphiles comme des créateurs indépendants. Ce projet illustre notre capacité à mener un projet web de
+            A à Z, en alliant outils professionnels (Figma, WordPress, API) et vision artistique.
+          </p>
+
+        </section>
 
 
-</main>
+  </main>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3 mt-5">
-  <p class="mb-0">&copy; 2025 - Portfolio Rafael</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 - Portfolio Rafael</p>
+  </footer>
 
-<!-- SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -29,9 +29,8 @@
     "category": "video",
     "description": "Expérience visuelle et sonore immersive.",
     "images": [
-      "image/pagerouge.png",
-      "image/pagerouge2.png",
-      "image/pagerouge3.png"
+      "image/pagerouge.png"
+ 
     ],
     "link": "pagerouge.html"
   },
@@ -41,9 +40,8 @@
     "category": "audio",
     "description": "crée une ambiance de fond marin avec des sons naturels. Le projet vise à immerger les spectateurs dans un environnement apaisant.",
     "images": [
-      "image/paysage.png",
-      "image/paysage2.png",
-      "image/paysage3.png"
+      "image/paysage.png"
+      
     ],
     "link": "paysage.html"
   },
@@ -53,9 +51,8 @@
     "category": "jeu",
     "description": "Bandit-go est un jeu 3D inspiré des courses de voitures, créé dans Unity.",
     "images": [
-      "image/banditgo.png",
-      "image/banditgo2.png",
-      "image/banditgo3.png"
+      "image/banditgo.png"
+    
     ],
     "link": "banditgo.html"
   },
@@ -65,9 +62,8 @@
     "category": "video",
     "description": "Court-métrage expérimental sur la perception du son.",
     "images": [
-      "image/mauditeroutine.png",
-      "image/mauditeroutine2.png",
-      "image/mauditeroutine3.png"
+      "image/mauditeroutine.png"
+      
     ],
     "link": "maudite.html"
   }

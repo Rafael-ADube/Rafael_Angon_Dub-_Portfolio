@@ -12,7 +12,6 @@
 
 <body>
 
-
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -23,7 +22,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <!-- lien qui mene au bonne endroit dans la page si je click -->
           <a class="nav-link" href="#projets">Projets</a>
           <a class="nav-link" href="#apropos">À propos</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -33,176 +31,98 @@
   </nav>
 
   <!-- HERO -->
-   
   <section class="hero bg-dark text-white text-center py-5 mb-10">
     <div class="container" id="hero-text">
-        <!-- texte avec aniamation -->
-      <h1 class="display-4 fw-bold"> Portfolio de Rafael</h1>
+      <h1 class="display-4 fw-bold">Portfolio de Rafael</h1>
     </div>
-    <div>
+    
+  </section>
 
-  
-
-
-
-
-    </div>
-  </section>   <!-- a propos -->
-<section id="portfolio-section" class="text-center py-5">
+<div id="portfolio-section" class="text-center py-5">
   <div id="PORTFOLIO"></div>
-</section>
- <section class="container my-5" id="apropos">
-  <h2 class="section-title text-center mb-4">À propos</h2>
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h3>Qui suis-je ?</h3>
-      <p>
-       Je m'appelle Rafael, passionné de multimédia et de création visuelle, je combine créativité et technologie à travers des projets en vidéo.
-Je suis actuellement à la recherche d’un stage pour développer mes compétences et contribuer à des projets visuels concrets.
-      </p>
-    </div>
-    <div class="col-md-6 text-center">
-      <img src="image/photo.png" alt="Photo de Rafael" class="img-fluid rounded shadow">
-    </div>
-  </div>
-</section>
-
-<section id="projets"></section>
- <h2 class="section-title">Projets</h2>
-
-<div class="appli-vue">
-  <div v-if="loading" class="text-center my-5">
-    <div class="spinner-border text-primary" role="status"></div>
-      <!-- charge le vue -->
-    <p class="mt-3">{{ message }}</p>
-  </div>
-
-<div v-else class="container my-5">
-  <div class="row g-4">
-    <div 
-      v-for="(project, index) in projects" 
-      :key="project.id" 
-      class="col-12 d-flex justify-content-center project-item"
-      :ref="'project-' + index">
-      <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden project-card">
-        <!-- Carrousel pour images -->
-        <div v-if="project.images && project.images.length" :id="'carousel' + project.id" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div 
-              v-for="(img, imgIndex) in project.images" 
-              :key="imgIndex"    
-              :class="['carousel-item', { active: imgIndex === 0 }]" >
-                <!-- va chercher les images dans le json -->
-              <img :src="img" class="d-block w-100 img-hover" :alt="project.title + ' image ' + (imgIndex + 1)">
-            </div>
-          </div>
-                 <!-- bouton qui  change les images -->
-          <button class="carousel-control-prev" type="button" :data-bs-target="'#carousel' + project.id" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" :data-bs-target="'#carousel' + project.id" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-
-        <div class="card-body text-center">
-           <!-- affiche le titre en vue -->
-          <h5 class="card-title fw-bold">{{ project.title }}</h5>
-           <!-- affiche la description en vue -->
-          <p class="card-text ">{{ project.description }}</p>
-        </div>
-
-  <!-- bouton qui va chercher et ouvrir le bon projet -->
-    <div class="card-footer bg-transparent border-0 text-center">
-      <button class="neon-btn" @click="openProject(project.link)">VOIR</button>
-    </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
- <!-- intéret -->
-        </div>
-   <div id="skills-section" class="my-5">
-  <h2 class="section-title">logiciel</h2>
-  <div class="skills-container">
-    <div v-for="prog in programs" :key="prog.name" class="skill-card text-center">
-      
-      <h5>{{ prog.name }}</h5>
-
-      <!-- Barre de progression -->
-      <div class="progress-bar-container">
-        <div class="progress-bar-fill" :style="{ width: prog.current + '%' }"></div>
-      </div>
-      
-    </div>
-  </div>
 </div>
 
+  <!-- À propos -->
+  <section class="container my-5" id="apropos">
+    <h2 class="section-title text-center mb-4">À propos</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3>Qui suis-je ?</h3>
+        <p>
+          Je m'appelle Rafael, passionné de multimédia et de création visuelle, je combine créativité et technologie à
+          travers des projets en vidéo. Je suis actuellement à la recherche d’un stage pour développer mes compétences
+          et contribuer à des projets visuels concrets.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="image/photo.png" alt="Photo de Rafael" class="img-fluid rounded shadow">
       </div>
     </div>
-  </div>
+  </section>
 
-  
+  <!-- Projets -->
+  <section id="projets" class="container my-5">
+    <h2 class="section-title">Projets</h2>
 
-<div class="section-divider"></div>
+    <div class="appli-vue">
+      <div v-if="loading" class="text-center my-5">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">{{ message }}</p>
+      </div>
 
+      <div v-else class="row g-4">
+        <div v-for="(project, index) in projects" :key="project.id" class="col-12 d-flex justify-content-center project-item">
+          <div class="project-card">
+            <img v-if="project.images && project.images.length" :src="project.images[0]"
+              :alt="project.title + ' image'" class="small-img mb-3">
 
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">{{ project.title }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+            </div>
 
-    <!-- SECTION PROGRAMMES -->
+            <div class="card-footer bg-transparent border-0 text-center">
+              <button class="neon-btn" @click="openProject(project.link)">VOIR</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section compétences (hors v-for) -->
+        <div id="skills-section" class="my-5">
+          <h2 class="section-title">Logiciel</h2>
+          <div class="skills-container">
+            <div v-for="prog in programs" :key="prog.name" class="skill-card text-center">
+              <h5>{{ prog.name }}</h5>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" :style="{ width: prog.current + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programmes -->
+  <section class="container my-5">
     <h2 class="section-title">Programme</h2>
     <div class="app-grid">
-      <div class="app"><img src="image/DaVinci_Resolve_Studio.png" alt="DaVinci">
-        <p>DaVinci</p>
-      </div>
-      <div class="app"><img src="image/Logo_Max_8_software.jpg" alt="Max">
-        <p>Max</p>
-      </div>
-      <div class="app"><img src="image/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop">
-        <p>Photoshop</p>
-      </div>
-      <div class="app"><img src="image/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator">
-        <p>Illustrator</p>
-      </div>
-      <div class="app"><img src="image/maya.png" alt="Maya">
-        <p>Maya</p>
-      </div>
-      <div class="app"><img src="image/reaper.jpg" alt="Reaper">
-        <p>Reaper</p>
-      </div>
-      <div class="app"><img src="image/wordpress.png" alt="wordpress">
-        <p>wordpress</p>
-      </div>
-      <div class="app"><img src="image/figma.png" alt="figma">
-        <p>figma</p>
-      </div>
-      <div class="app"><img src="image/touchdesigner.png" alt="touchdesigner">
-        <p>touchdesigner</p>
-      </div>
-      <div class="app"><img src="image/unity.png" alt="unity">
-        <p>unity</p>
-      </div>
-      <div class="app"><img src="image/phaser-logo.png" alt="phaser">
-        <p>phaser</p>
-      </div>
-      <div class="app"><img src="image/Adobe_After_Effects_CC_icon.svg.png" alt="after effect">
-        <p>after effect</p>
-        
-      </div>
+      <div class="app"><img src="image/DaVinci_Resolve_Studio.png" alt="DaVinci"><p>DaVinci</p></div>
+      <div class="app"><img src="image/Logo_Max_8_software.jpg" alt="Max"><p>Max</p></div>
+      <div class="app"><img src="image/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop"><p>Photoshop</p></div>
+      <div class="app"><img src="image/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator"><p>Illustrator</p></div>
+      <div class="app"><img src="image/maya.png" alt="Maya"><p>Maya</p></div>
+      <div class="app"><img src="image/reaper.jpg" alt="Reaper"><p>Reaper</p></div>
+      <div class="app"><img src="image/wordpress.png" alt="WordPress"><p>WordPress</p></div>
+      <div class="app"><img src="image/figma.png" alt="Figma"><p>Figma</p></div>
+      <div class="app"><img src="image/touchdesigner.png" alt="TouchDesigner"><p>TouchDesigner</p></div>
+      <div class="app"><img src="image/unity.png" alt="Unity"><p>Unity</p></div>
+      <div class="app"><img src="image/phaser-logo.png" alt="Phaser"><p>Phaser</p></div>
+      <div class="app"><img src="image/Adobe_After_Effects_CC_icon.svg.png" alt="After Effects"><p>After Effects</p></div>
     </div>
+  </section>
 
-
- <div class="section-divider"></div>
-
-
-
-  
-  <!-- SECTION CONTACT -->
+  <!-- Contact -->
   <section class="container my-5" id="contact">
     <h2 class="section-title text-center mb-4">Contact</h2>
     <div class="row justify-content-center">
@@ -210,21 +130,10 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
         <p>Vous pouvez me contacter pour discuter de projets ou collaborations.</p>
 
         <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
-          <!-- Lien Gmail -->
-          <a href="mailto:kostodube@gmail.com" class="neon-btn">
-            Envoyer un email
-          </a>
-
-          <!-- Lien Indeed -->
-          <a href="https://www.indeed.com" target="_blank" class="neon-btn">
-            Voir mon profil Indeed
-          </a>
-          <a href="" class="neon-btn">438-507-5353</a>
-
-          <!-- Lien GitHub -->
-          <a href="https://github.com/Rafael-ADube" target="_blank" class="neon-btn">
-            Voir mon GitHub
-          </a>
+          <a href="mailto:kostodube@gmail.com" class="neon-btn">Envoyer un email</a>
+          <a href="https://www.indeed.com" target="_blank" class="neon-btn">Voir mon profil Indeed</a>
+          <a href="tel:4385075353" class="neon-btn">438-507-5353</a>
+          <a href="https://github.com/Rafael-ADube" target="_blank" class="neon-btn">Voir mon GitHub</a>
         </div>
       </div>
     </div>
@@ -241,7 +150,6 @@ Je suis actuellement à la recherche d’un stage pour développer mes compéten
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-
   <script src="script.js"></script>
 
 </body>
