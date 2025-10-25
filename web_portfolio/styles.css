@@ -152,6 +152,7 @@ a {
 #contact {
   margin-top: 160px;
   text-align: center;
+  
 }
 /* contact texte */
 #contact p {
@@ -244,27 +245,42 @@ a {
 }
 
 
-/* ligne de  */
+
+/* Ligne de compétence */
 .skill-line {
   margin-bottom: 25px;
 }
-/* bouton des cartes quand tu passe decu */
+
+/* Conteneur de la barre */
 .progress-bar-container {
   width: 100%;
   height: 30px;
-  background-color:var(--panel);
+  background-color: var(--panel);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px var(--accent)(0, 255, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4); 
   margin-bottom: 60px;
 }
-/* bouton des cartes quand tu passe decu */
+
+/* Barre de progression */
 .progress-bar-fill {
   height: 100%;
   background: var(--accent);
   transition: width 0.3s ease-out;
   border-radius: 10px;
+
+  
 }
+
+/* Nom de la compétence */
+.skill-card h5 {
+  font-size: 1.5rem;  /* taille du texte */
+  color: var(--accent);     /* couleur du texte */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
 
 /* À PROPOS */
 #apropos {

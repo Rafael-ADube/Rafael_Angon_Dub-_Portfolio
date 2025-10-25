@@ -79,7 +79,8 @@ const app = Vue.createApp({
         { name: "Html", level: 85, current: 0,  }, //level le pourcentage ou ce rend la ligne
         { name: "Css", level: 70, current: 0, },//
         { name: "Javascript", level: 50, current: 0, },
-        { name: "c++", level: 20, current: 0,  },
+        { name: "C++", level: 20, current: 0,  },
+          { name: "C#", level: 35, current: 0,  },
       ]
     };
   },
