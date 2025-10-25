@@ -314,7 +314,7 @@ a {
 }
 
 /* Version téléphone  */
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* permet de voir l'aniamtion du texte portfolio en mode téléphone à la bonne grosseur  */
   #PORTFOLIO {
     font-size: 8vw; 
     opacity: 1;      
@@ -392,13 +392,13 @@ a {
   text-align: center;
   margin: 40px 0;
 }
-
+/* style pour les collaborateur dans les projets les h4 */
 .collaborations h4 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--accent);
 }
-
+/* style pour les collaborateur en monde liste */
 .collaborations ul li a {
   text-decoration: none;
   color: var(--accent);
@@ -420,4 +420,21 @@ a {
   list-style-type: none; /* Supprime les deux petits point */
   padding-left: 0;      
   margin: 0;
+}
+/* style pour mon role dans les projets */
+.role {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.role h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.role p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--accent);
 }
