@@ -102,8 +102,9 @@ body {
 /* application quand tu passe decu */
 .app:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 15px var(--accent)(31, 224, 96, 0.4);
+  box-shadow: 0 0 15px var(--accent);
 }
+
 /* images des application */
 .app img {
   width: 70px;

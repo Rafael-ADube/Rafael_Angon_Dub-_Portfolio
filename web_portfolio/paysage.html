@@ -13,124 +13,128 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+              aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="index.html">retour</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Retour</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-
-<!-- HERO -->
-<section class="hero bg-dark text-white text-center py-5 mb-5">
-  <div class="container" id="hero-text">
-    <h1 class="display-4 fw-bold">paysage sonore</h1>
-  </div>
-</section>
-
-<!-- MAIN -->
-<main class="container my-5">
-
-  <!-- CAROUSEL -->
-  <div id="carouselProjet" class="carousel slide mb-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="3"></button>
+  <!-- HERO -->
+  <div class="hero bg-dark text-white text-center py-5 mb-5">
+    <div class="container" id="hero-text">
+      <h1 class="display-4 fw-bold text-uppercase">Paysage sonore</h1>
     </div>
+  </div>
 
-    <div class="carousel-inner rounded shadow">
-      <div class="carousel-item active">
-        <img src="image/paysage.png" class="d-block w-100" alt="paysage">
+  <!-- CONTENU PRINCIPAL -->
+  <div class="container my-5">
+
+    <!-- CAROUSEL -->
+    <div id="carouselProjet" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="2"></button>
       </div>
-      <div class="carousel-item">
-        <img src="image/paysage2.png" class="d-block w-100" alt="paysage2">
+
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="image/paysage.png" class="d-block w-100" alt="Paysage 1">
+        </div>
+        <div class="carousel-item">
+          <img src="image/paysage2.png" class="d-block w-100" alt="Paysage 2">
+        </div>
+        <div class="carousel-item">
+          <img src="image/paysage3.png" class="d-block w-100" alt="Paysage 3">
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="image/paysage3.png" class="d-block w-100" alt="paysage3">
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+
+    <!-- PROGRAMMES UTILISÉS -->
+    <div class="mb-5">
+      <h2 class="section-title mb-4">Programmes utilisés</h2>
+      <div class="app-grid">
+        <div class="app">
+          <img src="image/max.png" alt="Max">
+          <p>Max</p>
+        </div>
+        <div class="app">
+          <img src="image/reaper.jpg" alt="Reaper">
+          <p>Reaper</p>
+        </div>
+        <div class="app">
+          <img src="image/maya.png" alt="Maya">
+          <p>Maya</p>
+        </div>
+        <div class="app">
+          <img src="image/touchdesigner.png" alt="TouchDesigner">
+          <p>TouchDesigner</p>
+        </div>
       </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Précédent</span>
-    </button>
+    <!-- OBJECTIF -->
+    <div class="mb-5">
+      <h4>Objectif</h4>
+      <p>
+        Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative.
+      </p>
+    </div>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjet" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Suivant</span>
-    </button>
+    <!-- DESCRIPTION DU PROJET -->
+    <div class="mb-5">
+      <h2 class="section-title">Description du projet</h2>
+      <p>
+        <strong>Paysage Sonore</strong> est un projet multidisciplinaire qui fusionne trois domaines : l’animation 3D, l’audio et le traitement audiovisuel. 
+        L’objectif était de créer une œuvre immersive où l’image et le son interagissent de manière cohérente pour offrir une expérience sensorielle unique.
+      </p>
+      <p>
+        Chaque membre de l’équipe a contribué à une partie essentielle du projet : modélisation et animation 3D, création sonore, design d’environnement et synchronisation audio-visuelle. 
+        L’univers final combine atmosphères visuelles et ambiances sonores pour plonger le spectateur dans un monde abstrait mais évocateur.
+      </p>
+      <p>
+        Ce projet a permis de mettre en pratique plusieurs compétences techniques tout en explorant la relation entre le son et l’image dans un contexte créatif.
+      </p>
+    </div>
+
+    <!-- LIEN DE RETOUR -->
+    <div class="contact-links d-flex flex-column align-items-center gap-3 mt-5">
+      <a href="index.html" class="neon-btn">Fermer</a>
+    </div>
   </div>
 
-  <!-- INFOS PROJET -->
-<section>
-  <h2 class="section-title">Programmes utilisés</h2>
-  <div class="app-grid">
-    <div class="app">
-      <img src="image/max.png" alt="Max">
-      <p>Max</p>
-    </div>
-    <div class="app">
-      <img src="image/reaper.jpg" alt="Reaper">
-      <p>Reaper</p>
-    </div>
-    <div class="app">
-      <img src="image/maya.png" alt="Maya">
-      <p>Maya</p>
-    </div>
-    <div class="app">
-      <img src="image/touchdesigner.png" alt="TouchDesigner">
-      <p>TouchDesigner</p>
-    </div>
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 - Portfolio Rafael</p>
+  </footer>
 
-
-
-  <h4>Objectif</h4>
-  <p>
-    Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative.
-  </p>
-
-  <h2 class="section-title">Description du projet</h2>
-<p>
-  <strong>Paysage Sonore</strong> est un projet multidisciplinaire qui fusionne trois domaines : l’animation 3D, l’audio et le traitement audiovisuel. L’objectif était de créer une œuvre immersive où l’image et le son interagissent de manière cohérente pour raconter une expérience sensorielle unique.
-</p>
-<p>
-  Chaque membre de l’équipe a contribué à une partie essentielle du projet : modélisation et animation 3D, création sonore, design d’environnement, et synchronisation audio-visuelle. L’univers final combine atmosphères visuelles et ambiances sonores pour plonger le spectateur dans un monde abstrait mais évocateur.
-</p>
-<p>
-  Ce projet a permis de mettre en pratique plusieurs compétences techniques tout en explorant la relation entre son et image dans un contexte créatif.
-</p>
-
-
-
-
- <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
-          <a href="index.html" class="neon-btn">fermer</a>
-</main>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3 mt-5">
-  <p class="mb-0">&copy; 2025 - Portfolio Rafael</p>
-</footer>
-
-<!-- SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

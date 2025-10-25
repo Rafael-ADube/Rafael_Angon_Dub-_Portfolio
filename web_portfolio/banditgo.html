@@ -12,34 +12,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Portfolio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-            aria-expanded="false" aria-label="Toggle navigation">
+            aria-expanded="false" aria-label="Basculer la navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="index.html">retour</a>
+        <a class="nav-link" href="index.html">Retour</a>
       </div>
     </div>
   </div>
 </nav>
 
-
 <!-- HERO -->
-<section class="hero bg-dark text-white text-center py-5 mb-5">
+<div class="hero bg-dark text-white text-center py-5 mb-5">
   <div class="container" id="hero-text">
-    <h1 class="display-4 fw-bold">Bandit-go</h1>
+    <h1 class="display-4 fw-bold">Bandit-Go</h1>
   </div>
-</section>
+</div>
 
-<!-- MAIN -->
-<main class="container my-5">
+<!-- CONTENU PRINCIPAL -->
+<div class="container my-5">
 
   <!-- CAROUSEL -->
   <div id="carouselProjet" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -47,20 +47,18 @@
       <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#carouselProjet" data-bs-slide-to="3"></button>
     </div>
 
     <div class="carousel-inner rounded shadow">
       <div class="carousel-item active">
-        <img src="image/banditgo.png" class="d-block w-100" alt="Image 1 du projet">
+        <img src="image/banditgo.png" class="d-block w-100" alt="Capture du jeu Bandit-Go 1">
       </div>
       <div class="carousel-item">
-        <img src="image/banditgo2.png" class="d-block w-100" alt="Image 2 du projet">
+        <img src="image/banditgo2.png" class="d-block w-100" alt="Capture du jeu Bandit-Go 2">
       </div>
       <div class="carousel-item">
-        <img src="image/banditgo3.png" class="d-block w-100" alt="Image 3 du projet">
+        <img src="image/banditgo3.png" class="d-block w-100" alt="Capture du jeu Bandit-Go 3">
       </div>
-      
     </div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjet" data-bs-slide="prev">
@@ -74,60 +72,69 @@
     </button>
   </div>
 
-  <!-- INFOS PROJET -->
-<section>
-  <h2 class="section-title">Programmes utilisés</h2>
-  <div class="app-grid">
-    <div class="app">
-      <img src="image/unity.png" alt="WordPress">
-      <p>Unity</p>
-    </div>
-    <div class="app">
-      <img src="image/figma.png" alt="Figma">
-      <p>figma</p>
+  <!-- PROGRAMMES UTILISÉS -->
+  <div class="mb-5">
+    <h2 class="section-title">Programmes utilisés</h2>
+    <div class="app-grid">
+      <div class="app">
+        <img src="image/unity.png" alt="Unity">
+        <p>Unity</p>
+      </div>
+      <div class="app">
+        <img src="image/figma.png" alt="Figma">
+        <p>Figma</p>
+      </div>
     </div>
   </div>
-</section>
-<!-- SECTION LIEN VERS LE PROJET -->
-<section class="section-lien text-center my-5">
-  <h2 class="section-title">Voir le projet</h2>
-  <p>Découvrez du film complet <strong>banditgo</strong> en ligne :</p>
-  <a href="https://www.youtube.com/watch?v=x-L_6SP8eu4&t=2s" target="_blank" class="neon-btn">
-    Accéder a page Rouge
-  </a>
 
-</section>
+  <!-- LIEN VERS LE PROJET -->
+  <div class="section-lien text-center my-5">
+    <h2 class="section-title">Voir le projet</h2>
+    <p>Découvrez le jeu complet <strong>Bandit-Go</strong> en ligne :</p>
+    <a href="https://www.youtube.com/watch?v=x-L_6SP8eu4&t=2s" target="_blank" class="neon-btn">
+      Accéder à Bandit-Go
+    </a>
+  </div>
 
-<section class="collaborations">
-  <h4>collaborations</h4>
-<ul>
-  <ul>
-  <li><a href="https://portfolio-ahmed.com" target="_blank" style="color: var(--accent);">Ahmed Kaïssoumi</a></li>
-  <li><a href="https://portfolio-Thearylou.com" target="_blank" style="color: var(--accent);">Thearylou Lach</a></li>
-</ul>
-</section>
-  <section>
+  <!-- COLLABORATIONS -->
+  <div class="collaborations mb-5">
+    <h4>Collaborations</h4>
+    <ul>
+      <li><a href="https://portfolio-ahmed.com" target="_blank" style="color: var(--accent);">Ahmed Kaïssoumi</a></li>
+      <li><a href="https://portfolio-thearylou.com" target="_blank" style="color: var(--accent);">Thearylou Lach</a></li>
+    </ul>
+  </div>
 
-  <h4>Objectif</h4>
-  <p>
-    Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative.
-  </p>
+  <!-- OBJECTIF -->
+  <div class="mb-5">
+    <h2 class="section-title">Objectif du projet</h2>
+    <p>
+      Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative.
+    </p>
+  </div>
 
-  <h2 class="section-title">Description du projet</h2>
-  <strong>Bandit-Go</strong> est un jeu d'action immersif en réalité virtuelle (VR), développé avec Unity.
-            Il s'inspire du vieux jeu d’arcade <em>Frogger</em>, en y ajoutant une ambiance moderne de cambriolage et de fuite urbaine.
-        </p>
-        <p>
-            Dans ce jeu, vous incarnez un bandit qui vient tout juste de dévaliser une banque.
-            L'objectif est simple en apparence : rejoindre votre voiture garée plus loin dans la rue pour vous enfuir.
-            Mais la route est semée d'embûches !
-        </p>
+  <!-- DESCRIPTION -->
+  <div class="mb-5">
+    <h2 class="section-title">Description du projet</h2>
+    <p>
+      <strong>Bandit-Go</strong> est un jeu d’action immersif en réalité virtuelle (VR), développé avec Unity.
+      Il s’inspire du jeu d’arcade classique <em>Frogger</em>, mais revisité dans une ambiance moderne de cambriolage et de fuite urbaine.
+    </p>
+    <p>
+      Vous incarnez un bandit venant de dévaliser une banque. Votre mission : rejoindre votre voiture garée plus loin dans la rue pour échapper à la police.
+      Mais attention, la route est pleine d’obstacles, de véhicules et de pièges !
+    </p>
+    <p>
+      Ce projet combine gameplay VR, design interactif et narration visuelle pour offrir une expérience à la fois amusante et immersive.
+    </p>
+  </div>
 
+  <!-- BOUTON RETOUR -->
+  <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
+    <a href="index.html" class="neon-btn">Fermer</a>
+  </div>
 
-
- <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
-          <a href="index.html" class="neon-btn">fermer</a>
-</main>
+</div>
 
 <!-- FOOTER -->
 <footer class="bg-dark text-white text-center py-3 mt-5">

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +14,19 @@
 
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Basculer la navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="index.html">retour</a>
+          <a class="nav-link" href="index.html">Retour</a>
         </div>
       </div>
     </div>
@@ -52,16 +53,16 @@
 
       <div class="carousel-inner rounded shadow">
         <div class="carousel-item active">
-          <img src="image/metrage.png" class="d-block w-100" alt="metrage">
+          <img src="image/metrage.png" class="d-block w-100" alt="Page d'accueil du site Métrage">
         </div>
         <div class="carousel-item">
-          <img src="image/métrage2.png" class="d-block w-100" alt="métrage2">
+          <img src="image/métrage2.png" class="d-block w-100" alt="Seconde page du site Métrage">
         </div>
         <div class="carousel-item">
-          <img src="image/métrage3.png" class="d-block w-100" alt="métrage3">
+          <img src="image/métrage3.png" class="d-block w-100" alt="Troisième page du site Métrage">
         </div>
         <div class="carousel-item">
-          <img src="image/métrage4.png" class="d-block w-100" alt="métrage4">
+          <img src="image/métrage4.png" class="d-block w-100" alt="Quatrième page du site Métrage">
         </div>
       </div>
 
@@ -76,90 +77,104 @@
       </button>
     </div>
 
-    <!-- INFOS PROJET -->
-
-    <h2 class="section-title">Programmes utilisés</h2>
-    <div class="app-grid">
-      <div class="app">
-        <a href="https://wordpress.org/" target="_blank">
-          <img src="image/wordpress.png" alt="WordPress">
-          <p>WordPress</p>
-        </a>
+    <!-- PROGRAMMES UTILISÉS -->
+    <section class="mb-5">
+      <h2 class="section-title">Programmes utilisés</h2>
+      <div class="app-grid">
+        <div class="app">
+          <a href="https://wordpress.org/" target="_blank">
+            <img src="image/wordpress.png" alt="WordPress">
+            <p>WordPress</p>
+          </a>
+        </div>
+        <div class="app">
+          <a href="https://www.figma.com/" target="_blank">
+            <img src="image/figma.png" alt="Figma">
+            <p>Figma</p>
+          </a>
+        </div>
       </div>
-      <div class="app">
-        <a href="https://www.figma.com/" target="_blank">
-          <img src="image/figma.png" alt="Figma">
-          <p>Figma</p>
-        </a>
-      </div>
-    </div>
+    </section>
 
-
-
-    <!-- SECTION LIEN VERS LES portfolio de mes coéquipiers -->
-    <section class="collaborations">
-      <h4>Collaborations</h4>
+    <!-- COLLABORATIONS -->
+    <section class="collaborations mb-5">
+      <h2 class="section-title">Collaborations</h2>
       <ul>
-        <li><a href="https://portfolio-alexandre.com" target="_blank" style="color: var(--accent);">Alexandre
-            Gendron</a></li>
-        <li><a href="https://portfolio-miakel.com" target="_blank" style="color: var(--accent);">Miakel Arsenault</a>
-        </li>
+        <li><a href="https://portfolio-alexandre.com" target="_blank" style="color: var(--accent);">Alexandre Gendron</a></li>
+        <li><a href="https://portfolio-miakel.com" target="_blank" style="color: var(--accent);">Miakel Arsenault</a></li>
       </ul>
     </section>
 
-    <!-- Objectif du projet -->
-    <section>
+    <!-- OBJECTIF -->
+    <section class="mb-5">
       <h2 class="section-title">Objectif du projet</h2>
       <p>
         Réaliser un projet multimédia complet intégrant la programmation, le design et l’expérimentation créative,
-        en allant au-delà des consignes initiales pour offrir une plateforme fonctionnelle et engageante.
+        en allant au-delà des consignes initiales pour offrir une plateforme fonctionnelle et engageante,
+        dans le cadre du cours de Web 4.
       </p>
     </section>
 
+    <!-- DESCRIPTION DU PROJET -->
     <section class="project-description">
       <h2 class="section-title">Description du projet</h2>
-      <p><strong>Métrage</strong> est un site de critiques de films, de séries et de courts-métrages créé par trois amis
-        : Rafael, Alexandre et Mikael. Nous y présentons principalement les films que nous aimons ou que nous avons vus
-        récemment. Ce site, réalisé dans le cadre du cours de Web 4, nous a permis d’apprendre à utiliser WordPress pour
-        le créer. Il offre aux utilisateurs une navigation facile et la possibilité de découvrir de nouvelles critiques
-        selon leurs préférences. Chaque page a été conçue pour être claire et intuitive, avec un accès rapide aux films,
-        séries et courts-métrages, tout en adoptant un design minimaliste qui conserve uniquement les éléments
-        essentiels pour une meilleure expérience utilisateur. Des animations légères ont également été ajoutées pour
-        rendre la navigation plus agréable et interactive.</p>
-         <img src="image/métrage4.png" alt="figma metrage" class="small-img">
-      <h2 class="section-title">Étape 1 : Recherche et inspiration</h2>
-      <p>Pour la recherche, nous avons consulté plusieurs sites de critiques de cinéma tels qu’IMDb, Letterboxd,
-        AlloCiné et d’autres, afin d’analyser la manière dont leurs sites et leurs critiques étaient conçus.</p>
-      <img src="image/moodboard1.png" alt="moodboard metrage" class="small-img">
+      <p>
+        <strong>Métrage</strong> est un site de critiques de films, de séries et de courts-métrages créé par trois amis :
+        Rafael, Alexandre et Mikael. Nous y présentons les films que nous aimons ou avons récemment visionnés.
+        Ce projet, réalisé dans le cadre du cours de Web 4, nous a permis d’apprendre à maîtriser WordPress.
+      </p>
+      <p>
+        Le site propose une navigation fluide, un design minimaliste et une structure claire. Chaque page permet
+        d’accéder rapidement à différentes catégories (films, séries, courts-métrages) tout en intégrant des animations
+        légères pour rendre l’expérience utilisateur agréable et interactive.
+      </p>
 
-      <h2 class="section-title">Étape 2 : Planification et design</h2>
-      <p>Pour le design du site, nous sommes allés sur Figma pour en créer la maquette. Nous savions que nous voulions
-        concevoir un site à la fois simple et esthétique, c’est pourquoi nous avons choisi un style minimaliste. Les
-        deux seules couleurs du site sont le noir et le blanc.</p>
-      <img src="image/métrage4.png" alt="figma metrage" class="small-img">
+      <img src="image/métrage4.png" alt="Aperçu Figma du projet Métrage" class="small-img">
 
-      <h2 class="section-title">Étape 3 : Développement</h2>
-      <p>Pour le développement du site, nous avons réalisé plusieurs étapes sur WordPress. Nous avons commencé par
-        installer un template existant, que nous avons ensuite modifié selon nos besoins. Nous avons ajouté toutes les
-        pages nécessaires : une page pour les tops, les films, les séries, les courts-métrages, ainsi qu’une page 404,
-        etc.</p>
-      <p>Nous avons dû reproduire ces étapes une seconde fois afin que le site soit disponible en français et en
-        anglais. Nous avons également intégré une API, en choisissant le site Rotten Tomatoes pour obtenir les notes des
-        films. Enfin, nous avons ajouté une animation avec GSAP pour rendre le site plus interactif et attrayant, afin
-        qu’il soit à la fois fonctionnel et esthétique.</p>
-      <img src="image/métrage4.png" alt="figma metrage" class="small-img">
+      <h3 class="section-subtitle mt-4">Étape 1 : Recherche et inspiration</h3>
+      <p>
+        Nous avons étudié plusieurs sites de critiques de cinéma tels qu’IMDb, Letterboxd et AlloCiné afin de comprendre
+        leurs approches de mise en page, de ton et de hiérarchie visuelle.
+      </p>
+      <img src="image/moodboard1.png" alt="Moodboard du projet Métrage" class="small-img">
 
-      <h3>Étape 4 : Tests et ajustements</h3>
-      <p>Pendant nos tests, nous avons rencontré un gros problème : la base du site ne fonctionnait pas correctement.
-        Nous avons donc passé du temps à le résoudre, en ajustant notamment la position de la barre de navigation pour
-        qu’elle soit mieux intégrée au site.</p>
+      <h3 class="section-subtitle mt-4">Étape 2 : Planification et design</h3>
+      <p>
+        Le design du site a été conçu sur Figma. Nous avons opté pour un style épuré, en noir et blanc, afin de
+        mettre en avant les contenus visuels et textuels sans distractions.
+      </p>
+      <img src="image/métrage4.png" alt="Prototype Figma du projet Métrage" class="small-img">
 
-      <h2 class="section-title">Conclusion</h2>
-      <p>Pour conclure, la création du site <strong>Métrage</strong> a été une belle expérience, qui m’a permis de mieux
-        comprendre WordPress et de développer mes compétences en travail d’équipe.</p>
+      <h3 class="section-subtitle mt-4">Étape 3 : Développement</h3>
+      <p>
+        Nous avons utilisé WordPress pour développer le site. Après l’installation d’un thème de base, nous l’avons
+        personnalisé selon nos besoins. Le site comporte plusieurs pages : tops, films, séries, courts-métrages,
+        ainsi qu’une page 404.
+      </p>
+      <p>
+        Le site a été décliné en deux langues (français et anglais), et nous avons intégré une API
+        Rotten Tomatoes pour récupérer les notes des films. Enfin, nous avons ajouté des animations GSAP
+        pour dynamiser l’expérience.
+      </p>
+
+      <h3 class="section-subtitle mt-4">Étape 4 : Tests et ajustements</h3>
+      <p>
+        Durant la phase de test, nous avons rencontré un problème d’affichage lié à la base du site.
+        Après plusieurs ajustements, notamment sur la barre de navigation, le site a atteint sa version finale.
+      </p>
+
+      <h2 class="section-title mt-4">Conclusion</h2>
+      <p>
+        Ce projet nous a permis de découvrir les possibilités de WordPress et de développer nos compétences
+        en travail d’équipe. <strong>Métrage</strong> fut une expérience formatrice et enrichissante.
+      </p>
     </section>
-     <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
-          <a href="index.html" class="neon-btn">fermer</a>
+
+    <!-- BOUTON RETOUR -->
+    <div class="contact-links d-flex flex-column align-items-center gap-3 mt-4">
+      <a href="index.html" class="neon-btn">Fermer</a>
+    </div>
+
   </main>
 
   <!-- FOOTER -->
@@ -174,5 +189,4 @@
   <script src="script.js"></script>
 
 </body>
-
 </html>
