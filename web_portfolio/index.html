@@ -63,54 +63,48 @@
 
   <!-- Projets -->
   <div id="projets" class="container my-5">
-    <h2 class="section-title">Projets</h2>
+  <h2 class="section-title">Projets</h2>
 
-    <div class="appli-vue">
-      <div v-if="loading" class="text-center my-5">
-        <div class="spinner-border text-primary" role="status"></div>
-        <!-- message du fetch qui affiche si le projet ne s'affiche pas -->
-        <p class="mt-3">{{ message }}</p>
-      </div>
+  <div id="appli-vue" class="appli-vue">
+    <div v-if="loading" class="text-center my-5">
+      <div class="spinner-border text-primary" role="status"></div>
+      <p class="mt-3">{{ message }}</p>
+    </div>
 
-      <div v-else class="row g-4">
-        <!-- va chercher le projet dans le json.projets --> <!-- les col boostrap -->
-        <div v-for="project in projects" :key="project.id" class="col-12 d-flex justify-content-center project-item">
-          <div class="project-card">
-            <!-- va chercher les images dans le json-->
-            <img :src="project.images[0]" :alt="project.title + ' image'" class="small-img mb-3">
+    <div v-else class="row g-4">
+      <div v-for="project in projects" :key="project.id" class="col-12 d-flex justify-content-center project-item">
+        <div class="project-card">
+          <!-- Image du projet -->
+          <img :src="project.images[0]" :alt="project.titre + ' image'" class="small-img mb-3">
 
-            <div class="card-body text-center">
-              <!-- affiche le titre du projet écrit dans le  json.projets -->
-              <h5 class="card-title fw-bold">{{ project.titre }}</h5>
-              <!-- affiche le titre du projet écrit dans le  json.projets -->
-              <p class="card-text">{{ project.description }}</p>
-            </div>
-            <!-- le bouton dans chaque carte-->
-            <div class="card-footer bg-transparent border-0 text-center">
-              <!-- le @click va ouvrir le bon projet qui est dans projects.json -->
-              <button class="neon-btn" @click="openProject(project.lien)">VOIR</button>
-            </div>
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">{{ project.titre }}</h5>
+            <p class="card-text">{{ project.description }}</p>
           </div>
-        </div>
-        <div class="section-divider"></div>
-        <!-- Section compétences  -->
-        <div id="skills-section" class="my-5">
-          <h2 class="section-title">Language de programma</h2>
-          <div class="skills-container">
 
-            <div v-for="prog in programs" :key="prog.name" class="skill-card text-center">
-              <!-- affiche le nom grace au compossant -->
-              <h5>{{ prog.name }} </h5>
-              <div class="progress-bar-container">
-                <!-- affiche  le pourcentage de la barre-->
-                <div class="progress-bar-fill" :style="{ width: prog.current + '%' }"></div>
-              </div>
-            </div>
+          <!-- Bouton / lien vers la page projet avec proj-id -->
+          <div class="card-footer bg-transparent border-0 text-center">
+            <a :href="'projet.html?proj-id=' + project.id" class="neon-btn">VOIR</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
+
+
+  <div id="app">
+  <div v-if="project">
+    <h1>{{ project.titre }}</h1>
+    <p>{{ project.categorie }}</p>
+    <p>{{ project.description }}</p>
+
+    <section>
+      <h2>Mon rôle</h2>
+      <p>{{ project.role }}</p>
+    </section>
+
+    <section>
+  
   <div class="section-divider"></div>
   <!-- Programmes -->
   <div class="container my-5">

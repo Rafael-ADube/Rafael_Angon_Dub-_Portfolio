@@ -2,65 +2,78 @@
   {
     "id": 1,
     "titre": "Métrage",
-    "category": "site web",
-    "description": "Un site de critiques cinématographiques.: films, séries et courts métrages. Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
-    "images": [
-      "image/metrage.png"
-    ],
-    "lien": "metrage.html"
+    "categorie": "Site web / court-métrage",
+    "description": "Site de critiques cinématographiques créé par Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
+     "description longues": "Site de critiques cinématographiques créé par Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
+     
+    "images": ["image/test.png", "image/métrage2.png", "image/métrage3.png"],
+    "programmes": ["image/test.png", "image/métrage2.png", "image/métrage3.png"],
+     "programmes_utilises": ["WordPress", "DaVinci Resolve"],
+    "role": "Contributeur / réalisateur",
+    "lien": ""
   },
   {
     "id": 2,
-    "titre": "Les Cendres oubliées",
-    "category": "jeu",
-    "description": "Jeu narratif en pixel art.",
-    "images": [
-      "image/cendre.png"
+    "titre": "Page Rouge",
+    "categorie": "Court-métrage stop-motion",
+    "description": "Histoire d’un écrivain prisonnier d’une boucle créative.",
+    "images": ["image/pagerouge.png", "image/pagerouge2.png", "image/pagerouge3.png"],
+    "programmes_utilises": ["WordPress", "DaVinci Resolve"],
+    "role": "Acteur",
+    "collaborations": [
+      {"nom": "Émeryk Bélisle", "role": "animateur 2D et Directeur photo"},
+      {"nom": "Miakel Arsenault", "role": "réalisateur"},
+      {"nom": "Cristian Mendoza", "role": "sénariste"}
     ],
-    "lien": "cendre.html"
+    "youtube": "https://www.youtube.com/watch?v=x-L_6SP8eu4&t=2s"
   },
   {
     "id": 3,
-    "titre": "Page Rouge",
-    "category": "video",
-    "description": "Expérience visuelle et sonore immersive.",
-    "images": [
-      "image/pagerouge.png"
- 
+    "titre": "Bandit-Go",
+    "categorie": "Jeu vidéo VR",
+    "description": "Jeu d’action VR inspiré de Frogger, le joueur incarne un bandit qui doit échapper à la police.",
+    "images": ["image/banditgo.png", "image/banditgo2.png", "image/banditgo3.png"],
+    "programmes_utilises": ["Unity", "Figma"],
+    "role": "Programmeur et modélisateur 3D",
+    "collaborations": [
+      {"nom": "Ahmed Kaïssoumi", "role": "programmeur Unity"},
+      {"nom": "Thearylou Lach", "role": "programmeur Touchdesigner"}
     ],
-    "lien": "pagerouge.html"
+    "youtube": "https://www.youtube.com/watch?v=x-L_6SP8eu4&t=2s"
   },
   {
     "id": 4,
-    "titre": "paysages sonores",
-    "category": "audio",
-    "description": "crée une ambiance de fond marin avec des sons naturels. Le projet vise à immerger les spectateurs dans un environnement apaisant.",
-    "images": [
-      "image/paysage.png"
-      
-    ],
-    "lien": "paysage.html"
+    "titre": "Les Cendres Oubliées",
+    "categorie": "Jeu vidéo",
+    "description": "Jeu de plateforme avec Phaser, le joueur combat Cindorak pour sauver la forêt.",
+    "images": ["image/cendre.png", "image/cendre2.png", "image/cendre3.png", "image/cendre4.png"],
+    "programmes_utilises": ["Phaser", "Figma"],
+    "role": "Créateur du jeu",
+    "itchio": "https://kostored.itch.io/les-cendres-oublies"
   },
   {
     "id": 5,
-    "titre": "Bandit-go",
-    "category": "jeu",
-    "description": "Bandit-go est un jeu 3D inspiré des courses de voitures, créé dans Unity.",
-    "images": [
-      "image/banditgo.png"
-    
+    "titre": "La Maudite Routine",
+    "categorie": "Court-métrage",
+    "description": "Exploration de la répétition et de l’épuisement mental via une boucle temporelle.",
+    "images": ["image/mauditeroutine.png", "image/mauditeroutine2.png", "image/mauditeroutine3.png"],
+    "programmes_utilises": ["DaVinci Resolve", "Reaper"],
+    "role": "Comédien",
+    "collaborations": [
+      {"nom": "Ahmed Kaïssoumi", "role": "direction artistique"},
+      {"nom": "Thearylou Lach", "role": "direction photo"},
+      {"nom": "Radhouane Kordan", "role": "réalisateur"}
     ],
-    "lien": "banditgo.html"
+    "youtube": "https://www.youtube.com/watch?v=MHUBghKWXik"
   },
   {
     "id": 6,
-    "titre": "maudit routine",
-    "category": "video",
-    "description": "Court-métrage expérimental sur la perception du son.",
-    "images": [
-      "image/mauditeroutine.png"
-      
-    ],
-    "lien": "maudite.html"
+    "titre": "Paysage Sonore",
+    "categorie": "Projet multimédia",
+    "description": "Fusion de l’animation 3D, du son et du traitement audiovisuel pour une expérience immersive.",
+    "images": ["image/paysage.png", "image/paysage2.png", "image/paysage3.png"],
+    "programmes_utilises": ["Max", "Reaper", "Maya", "TouchDesigner"],
+    "role": "Créateur du projet",
+    "lien": ""
   }
 ]
