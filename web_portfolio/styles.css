@@ -292,6 +292,8 @@ a {
   max-width: 1000px;
   color: var(--accent);
   text-align: left;
+  margin-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 #apropos h2,

@@ -1,7 +1,7 @@
 // ScrollTrigger 
 gsap.registerPlugin(ScrollTrigger);
 
-// Animation titre Hero 
+// Animation titre Hero animation trouver sur internet
 gsap.from(".hero h1", {
   scrollTrigger: {
     trigger: ".hero",
@@ -22,11 +22,6 @@ gsap.from(".hero h1", {
     });
   }
 });
-
-//le texte d’intro 
-const tl = gsap.timeline({ defaults: { duration: 0.6, ease: "power3.out" } });
-tl.to(".char", { opacity: 1, y: 0, stagger: 0.05 })
-  .from("#hero-text p", { opacity: 0, y: 20, duration: 1 }, "0.3");
 
 //Animations “À propos” 
 gsap.from("#apropos .col-md-6:not(.text-center)", {
@@ -76,11 +71,11 @@ const app = Vue.createApp({
       message: "Chargement...",//affiche le message de
       projects: [],//va chercher projects.json et tous en l'intérieur
       programs: [//tableau dans lequel les information apparait apres dans mon vue pourcentage
-        { name: "Html", level: 85, current: 0,  }, //level le pourcentage ou ce rend la ligne
-        { name: "Css", level: 70, current: 0, },//
+        { name: "Html", level: 85, current: 0, }, //level le pourcentage ou ce rend la ligne
+        { name: "Css", level: 70, current: 0, },//current
         { name: "Javascript", level: 50, current: 0, },
-        { name: "C++", level: 20, current: 0,  },
-          { name: "C#", level: 35, current: 0,  },
+        { name: "C++", level: 20, current: 0, },
+        { name: "C#", level: 35, current: 0, },
       ]
     };
   },
@@ -99,10 +94,10 @@ const app = Vue.createApp({
         });
       });
     },
-  openProject(link) { // va chercher dans .json
-  // Ouvre le projet dans la même page
-  window.location.href = link;
-},
+    openProject(link) { // va chercher dans .json
+      // Ouvre le projet dans la même page
+      window.location.href = link;
+    },
 
   },
   mounted() {
@@ -120,48 +115,24 @@ const app = Vue.createApp({
             onEnter: () => this.startAnimation()
           });
 
-          // === Animation images compétences ===
-          gsap.from("#skills-section img", {
-            scrollTrigger: {
-              trigger: "#skills-section",
-              start: "top 60%",
-            },
-            opacity: 0,
-            scale: 0.8,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power2.out"
-          });
 
           // === Animation projets ===
-     // === Animation GSAP pour chaque carte de projet ===
-gsap.utils.toArray('.project-card').forEach((card, index) => {
-  gsap.from(card, {
-    scrollTrigger: {
-      trigger: card,
-      start: "top 80%",
-      toggleActions: "play none none reverse",
-    },
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: "power3.out",
-    delay: index * 0.1
-  });
-});
-
-
-          this.$nextTick(() => {//chatgpt ma aider pour utiliser this.$nextTick je suis ensuite aller voir sur w3school sa ma permis de comprendre que ca permet de faire du apres le chargement de la page 
-            // Réinitialiser les carrousels Bootstrap après rendu Vue
-            document.querySelectorAll('.carousel').forEach(el => {
-              new bootstrap.Carousel(el, {
-                interval: 8000, // 
-                ride: 'carousel',
-                pause: false, 
-                wrap: true
-              });
+          // === Animation GSAP pour chaque carte de projet ===
+          gsap.utils.toArray('.project-card').forEach((card, index) => {
+            gsap.from(card, {
+              scrollTrigger: {
+                trigger: card,
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+              },
+              opacity: 0,
+              y: 50,
+              duration: 1,
+              ease: "power3.out",
+              delay: index * 0.1
             });
           });
+
 
           // Délai pour laisser le DOM et images se stabiliser
           setTimeout(() => {

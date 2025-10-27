@@ -1,66 +1,66 @@
 [
   {
     "id": 1,
-    "title": "Métrage",
+    "titre": "Métrage",
     "category": "site web",
     "description": "Un site de critiques cinématographiques.: films, séries et courts métrages. Il a été créé par trois amis passionnés : Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
     "images": [
       "image/metrage.png"
     ],
-    "link": "metrage.html"
+    "lien": "metrage.html"
   },
   {
     "id": 2,
-    "title": "Les Cendres oubliées",
+    "titre": "Les Cendres oubliées",
     "category": "jeu",
     "description": "Jeu narratif en pixel art.",
     "images": [
       "image/cendre.png"
     ],
-    "link": "cendre.html"
+    "lien": "cendre.html"
   },
   {
     "id": 3,
-    "title": "Page Rouge",
+    "titre": "Page Rouge",
     "category": "video",
     "description": "Expérience visuelle et sonore immersive.",
     "images": [
       "image/pagerouge.png"
  
     ],
-    "link": "pagerouge.html"
+    "lien": "pagerouge.html"
   },
   {
     "id": 4,
-    "title": "paysages sonores",
+    "titre": "paysages sonores",
     "category": "audio",
     "description": "crée une ambiance de fond marin avec des sons naturels. Le projet vise à immerger les spectateurs dans un environnement apaisant.",
     "images": [
       "image/paysage.png"
       
     ],
-    "link": "paysage.html"
+    "lien": "paysage.html"
   },
   {
     "id": 5,
-    "title": "Bandit-go",
+    "titre": "Bandit-go",
     "category": "jeu",
     "description": "Bandit-go est un jeu 3D inspiré des courses de voitures, créé dans Unity.",
     "images": [
       "image/banditgo.png"
     
     ],
-    "link": "banditgo.html"
+    "lien": "banditgo.html"
   },
   {
     "id": 6,
-    "title": "maudit routine",
+    "titre": "maudit routine",
     "category": "video",
     "description": "Court-métrage expérimental sur la perception du son.",
     "images": [
       "image/mauditeroutine.png"
       
     ],
-    "link": "maudite.html"
+    "lien": "maudite.html"
   }
 ]
