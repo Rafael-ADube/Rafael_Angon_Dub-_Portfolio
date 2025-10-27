@@ -18,40 +18,53 @@
   <div v-if="project">
 
     <!-- HERO -->
-    <section class="hero bg-dark text-white text-center py-5 mb-5 rounded">
-      <div class="container">
-        <h1 class="display-4 fw-bold mb-3">{{ project.titre }}</h1>
-        <p class="lead mb-3">{{ project.categorie }}</p>
-        <p class="mb-4">{{ project.description }}</p>
-      </div>
-    </section>
-
-    <!-- Mon rôle -->
-    <section class="mb-5">
-      <h2 class="mb-3">Mon rôle</h2>
-      <p>{{ project.role }}</p>
-    </section>
-
-    <!-- Collaborations -->
-    <section class="collaborations">
+     <section class="hero bg-dark text-white text-center py-5 mb-5"></section>
+     <div class="container" id="hero-text">
+      <h1 class="display-4 fw-bold">{{ project.titre }}</h1>
+    </div>
+    
+     <section class="collaborations mb-5">
   <h2 class="section-title mb-3">Collaborations</h2>
   <ul>
-    <li v-for="collab in project.collaborateurs" :key="collab.nom" class="mb-2">
-      <a :href="collab.lien" target="_blank">{{ collab.nom }}</a>
+    <li v-for="collab in project.collaborations" :key="collab.nom" class="mb-2">
+      <strong>{{ collab.nom }}</strong> — {{ collab.role }}
     </li>
   </ul>
 </section>
 
-    <a href="index.html" class="btn btn-outline-dark mb-5">Retour</a>
+    <!-- Mon rôle -->
+    <div class="role mb-5">
+      <h2 class="mb-3">Mon rôle</h2>
+      <p>{{ project.role }}</p>
+    
 
+   
+
+ <p>{{ project.collaboration }}</p>
+   
+  
+
+
+      <h2 class="section-title">Programmes utilisés</h2>
+
+     <div v-if="project.images && project.images.length" class="d-flex flex-column align-items-center gap-4 mt-4">
+  <div 
+    v-for="(img, index) in project.images" 
+    :key="index" 
+    class="img-container w-100"
+    style="max-width: 800px;"
+  >
+    <img 
+      :src="img" 
+      :alt="project.titre + ' ' + (index+1)" 
+      class="img-fluid rounded shadow"
+      style="width: 100%; height: auto;"
+    >
   </div>
+</div>
 
-
-      
 
     
-      <a href="index.html" class="btn btn-outline-light mt-3">Retour</a>
-    </div>
 
         
   <!-- FOOTER -->
