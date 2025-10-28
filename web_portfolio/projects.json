@@ -5,11 +5,18 @@
     "categorie": "Site web / court-métrage",
     "description": "Site de critiques cinématographiques créé par Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
      "description longues": "Site de critiques cinématographiques créé par Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
-     
-    "images": ["image/test.png", "image/métrage2.png", "image/métrage3.png"],
-    "programmes": ["image/test.png", "image/métrage2.png", "image/métrage3.png"],
-     "programmes_utilises": ["WordPress", "DaVinci Resolve"],
+      "etape1": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
+      "etape2": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
+      "etape3": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
+      "images": ["image/test.png", "image/métrage2.png", "image/métrage3.png"],
+    "programmes": ["image/davinci.png", "image/figma.png"],
+     "utilises": ["WordPress", "DaVinci Resolve"],
     "role": "rédacteur / réalisateur",
+    "collaborations": [
+      {"nom": "Alexandre Gendron", "role": "designer"},
+      {"nom": "Miakel Arsenault", "role": "réalisateur"}
+    
+    ],
     "lien": ""
   },
   {
@@ -18,6 +25,7 @@
     "categorie": "Court-métrage stop-motion",
     "description": "Histoire d’un écrivain prisonnier d’une boucle créative.",
     "images": ["image/pagerouge.png", "image/pagerouge2.png", "image/pagerouge3.png"],
+    "programmes": ["image/davinci.png", "image/figma.png"],
     "programmes_utilises": ["WordPress", "DaVinci Resolve"],
     "role": "Acteur",
     "collaborations": [
@@ -33,7 +41,8 @@
     "categorie": "Jeu vidéo VR",
     "description": "Jeu d’action VR inspiré de Frogger, le joueur incarne un bandit qui doit échapper à la police.",
     "images": ["image/banditgo.png", "image/banditgo2.png", "image/banditgo3.png"],
-    "programmes_utilises": ["Unity", "Figma"],
+    "programmes": ["image/davinci.png", "image/figma.png"],
+    "utilises": ["Unity", "Figma"],
     "role": "Programmeur et modélisateur 3D",
     "collaborations": [
       {"nom": "Ahmed Kaïssoumi", "role": "programmeur Unity"},
@@ -47,6 +56,7 @@
     "categorie": "Jeu vidéo",
     "description": "Jeu de plateforme avec Phaser, le joueur combat Cindorak pour sauver la forêt.",
     "images": ["image/cendre.png", "image/cendre2.png", "image/cendre3.png", "image/cendre4.png"],
+    "programmes": ["image/davinci.png", "image/figma.png"],
     "programmes_utilises": ["Phaser", "Figma"],
     "role": "Créateur du jeu",
     "itchio": "https://kostored.itch.io/les-cendres-oublies"
@@ -57,6 +67,7 @@
     "categorie": "Court-métrage",
     "description": "Exploration de la répétition et de l’épuisement mental via une boucle temporelle.",
     "images": ["image/mauditeroutine.png", "image/mauditeroutine2.png", "image/mauditeroutine3.png"],
+    "programmes": ["image/davinci.png", "image/figma.png"],
     "programmes_utilises": ["DaVinci Resolve", "Reaper"],
     "role": "Comédien",
     "collaborations": [
@@ -72,6 +83,7 @@
     "categorie": "Projet multimédia",
     "description": "Fusion de l’animation 3D, du son et du traitement audiovisuel pour une expérience immersive.",
     "images": ["image/paysage.png", "image/paysage2.png", "image/paysage3.png"],
+    "programmes": ["image/davinci.png", "image/figma.png"],
     "programmes_utilises": ["Max", "Reaper", "Maya", "TouchDesigner"],
     "role": "Créateur du projet",
     "lien": ""

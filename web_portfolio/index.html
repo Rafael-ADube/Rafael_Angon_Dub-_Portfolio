@@ -92,18 +92,24 @@
   
 
 
-  <div id="app">
-  <div v-if="project">
-    <h1>{{ project.titre }}</h1>
-    <p>{{ project.categorie }}</p>
-    <p>{{ project.description }}</p>
+        <div class="section-divider"></div>
+        <!-- Section compétences  -->
+        <div id="skills-section" class="my-5">
+          <h2 class="section-title">Language de programma</h2>
+          <div class="skills-container">
 
-    <section>
-      <h2>Mon rôle</h2>
-      <p>{{ project.role }}</p>
-    </section>
-
-    <section>
+            <div v-for="prog in programs" :key="prog.name" class="skill-card text-center">
+              <!-- affiche le nom grace au compossant -->
+              <h5>{{ prog.name }} </h5>
+              <div class="progress-bar-container">
+                <!-- affiche  le pourcentage de la barre-->
+                <div class="progress-bar-fill" :style="{ width: prog.current + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
   <div class="section-divider"></div>
   <!-- Programmes -->

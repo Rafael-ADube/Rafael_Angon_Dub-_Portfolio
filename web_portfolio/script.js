@@ -2,10 +2,10 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // === Hero (page accueil uniquement) ===
-if (document.querySelector(".hero h1")) {
-  gsap.from(".hero h1", {
+document.querySelectorAll(".hero h1").forEach(titre => {
+  gsap.from(titre, {
     scrollTrigger: {
-      trigger: ".hero",
+      trigger: titre.parentElement,
       start: "top 80%",
     },
     opacity: 0,
@@ -13,7 +13,7 @@ if (document.querySelector(".hero h1")) {
     duration: 1.2,
     ease: "power3.out",
     onComplete: () => {
-      gsap.to(".hero h1", {
+      gsap.to(titre, {
         textShadow: "0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 80px #00ff88",
         repeat: -1,
         yoyo: true,
@@ -22,7 +22,7 @@ if (document.querySelector(".hero h1")) {
       });
     }
   });
-}
+});
 
 // === Section À propos (page accueil uniquement) ===
 if (document.querySelector("#apropos")) {
@@ -97,9 +97,7 @@ const app = Vue.createApp({
         });
       });
     },
-    openProject(link) {
-      window.location.href = link;
-    }
+   
   },
   mounted() {
     const params = new URLSearchParams(window.location.search);
