@@ -66,6 +66,7 @@
       <div v-if="project.programmes && project.programmes.length" class="app-grid">
         <div v-for="(img, index) in project.programmes" :key="index" class="app">
           <img :src="img" :alt="project.titre + ' programme ' + (index+1)">
+            
         </div>
       </div>
 
@@ -89,12 +90,24 @@
 <p>{{ project.description }}</p>
 
 <!-- Image visible uniquement pour les projets 2 à 6 -->
-<img 
+<div 
   v-if="[2,3,4,5,6].includes(project.id) && project.images && project.images.length > 1"
-  :src="project.images[1]" 
-  alt="Image illustrant l'objectif du projet"
-  class="img-fluid rounded shadow my-4 mx-auto d-block"
-  style="max-width: 800px; width: 100%; height: auto;">
+  style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;"
+>
+  <img 
+    :src="project.images[1]" 
+    alt="Image 1 du projet"
+    class="img-fluid rounded shadow"
+    style="max-width: 600px; height: auto;"
+  >
+  <img 
+    v-if="project.images.length > 2"
+    :src="project.images[2]" 
+    alt="Image 2 du projet"
+    class="img-fluid rounded shadow"
+    style="max-width: 600px; height: auto;"
+  >
+</div>
 
       <!-- Étapes visibles uniquement pour le projet avec id = 1 -->
       <div v-if="project.id === 1">

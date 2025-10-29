@@ -26,7 +26,7 @@ body {
   margin: 0;
   background: var(--bg);/* la couleur du fond du site */
   color: var(--muted);
-  font-family: "space-grotesk";/* la font qui utilise de l'écriture de la page */
+  font-family: 'Space Grotesk', sans-serif; /* la font qui est utiliser pour le texte */
   font-size: large;/* la grosseur de l'écriture*/
   line-height: 1.6;
   
