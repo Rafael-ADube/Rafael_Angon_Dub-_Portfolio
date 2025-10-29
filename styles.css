@@ -452,7 +452,11 @@ a {
 
 
 
-.etape p {
-  color: var(--muted); /* texte gris clair/blanc selon ta variable */
-  font-size: 1.2rem;
+.etape  {
+  color: var(--accent); /* texte gris clair/blanc selon ta variable */
+  font-size: 1.5rem;
+  font-family: 'Monomod';
+}
+.etape + p {
+  font-family: 'space-grotesk';
 }
