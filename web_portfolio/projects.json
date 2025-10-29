@@ -8,14 +8,15 @@
       "etape1": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
       "etape2": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
       "etape3": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
+      "conclusion": "ce projet nous a permis de découvrir les possibilités de WordPress et de développer nos compétences en travail d’équipe. Métrage fut une expérience formatrice et enrichissante.",
        "etape4": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
-      "images": ["image/test.png", "image/métrage2.png", "image/métrage3.png","image/métrage4.png", "image/metrage5.png"],
+      "images": ["image/test.png", "image/métrage2.png", "image/métrage3.png","image/métrage4.png",  "image/moodboard.png"],
     "programmes": ["image/davinci.png", "image/figma.png"],
      "utilises": ["WordPress", "DaVinci Resolve"],
-    "role": "rédacteur / réalisateur",
+    "role": "Rédacteur / Développeur web",
     "collaborations": [
       {"nom": "Alexandre Gendron", "role": "designer"},
-      {"nom": "Miakel Arsenault", "role": "réalisateur"}
+      {"nom": "Miakel Arseneau", "role": "développeur "}
     
     ],
     "lien": ""
@@ -24,7 +25,7 @@
     "id": 2,
     "titre": "Page Rouge",
     "categorie": "Court-métrage stop-motion",
-    "description": "Histoire d’un écrivain prisonnier d’une boucle créative.",
+    "description": "Page Rouge est orinal mêlant stop-motion et animation 2D. Il raconte l’histoire d’un écrivain solitaire, pris au piège dans une boucle sans fin, incapable de terminer son œuvre. À chaque tentative, les mots lui échappent, les pages se vident, et la réalité autour de lui commence à se transformer. Ce projet explore les thèmes du blocage créatif, de l’obsession et de la perte de repères. L’univers visuel, à la fois sombre et stylisé, renforce le sentiment d’isolement du personnage et l’étrangeté de sa situation. Page Rouge a été réalisé en équipe, en combinant différentes techniques d’animation pour créer un court-métrage immersif et expressif. ",
     "images": ["image/pagerouge.png", "image/pagerouge2.png", "image/pagerouge3.png"],
     "programmes": ["image/davinci.png", "image/figma.png"],
     "programmes_utilises": ["WordPress", "DaVinci Resolve"],
@@ -40,7 +41,7 @@
     "id": 3,
     "titre": "Bandit-Go",
     "categorie": "Jeu vidéo VR",
-    "description": "Jeu d’action VR inspiré de Frogger, le joueur incarne un bandit qui doit échapper à la police.",
+    "description": "est un jeu d'action imersif en réalité virtuelle (VR), développé avec Unity. IL s'inspire du jeu d'arcade classique frogger mais revisité dans une ambiance moderne de cambriolage et de fuite urbaine. vous incarnez un bandit venant de  dévaliiser une banque. votre mission : rejoindre votre voiture garée plus loin dans la rue pour échapper à  la police. Mais attention, la route est plein de voitures.  Ce projet combine gameplay VR, design interactif et narration visuelle pour offrir une expérience à la fois amusante et immersive.",
     "images": ["image/banditgo.png", "image/banditgo2.png", "image/banditgo3.png"],
     "programmes": ["image/davinci.png", "image/figma.png"],
     "utilises": ["Unity", "Figma"],

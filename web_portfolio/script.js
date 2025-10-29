@@ -76,11 +76,10 @@ const app = Vue.createApp({
        projects: [],  // ← ajouter
     project: null, // ← ajouter
       programs: [
-        { name: "Html", level: 85, current: 0 },
-        { name: "Css", level: 70, current: 0 },
-        { name: "Javascript", level: 50, current: 0 },
-        { name: "C++", level: 20, current: 0 },
-        { name: "C#", level: 35, current: 0 },
+        { name: "Html", level: 50, current: 0 },
+        { name: "Css", level: 40, current: 0 },
+        { name: "Javascript", level: 30, current: 0 },
+      
       ],
     
     };
@@ -111,7 +110,7 @@ const app = Vue.createApp({
         this.loading = false;
 
         // === Page accueil : animations compétences & projets ===
-        if (!id) {
+         {
           this.$nextTick(() => {
             if (document.querySelector("#skills-section")) {
               ScrollTrigger.create({
@@ -120,7 +119,6 @@ const app = Vue.createApp({
                 onEnter: () => this.startAnimation()
               });
             }
-
             if (document.querySelectorAll(".project-card").length) {
               gsap.utils.toArray(".project-card").forEach((card, index) => {
                 gsap.from(card, {
@@ -150,5 +148,5 @@ const app = Vue.createApp({
   }
 });
 
-// === Monter Vue ===
+
 app.mount("#appli-vue");
