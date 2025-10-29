@@ -137,7 +137,7 @@ const app = Vue.createApp({
         }
       })
       .catch(err => {
-        console.error(err);
+        console.error(err);//vois si il y a un eurreur
         this.message = "Erreur lors du chargement des projets";
       });
   }
