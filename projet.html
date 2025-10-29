@@ -47,6 +47,7 @@
 
       <h2 class="section-title">Programmes utilisés</h2>
  <!-- image des  programmes -->
+    <div class="section-divider"></div>
   
       <div v-if="project.programmes && project.programmes.length" class="app-grid">
         <div v-for="(img, i) in project.programmes" :key="i" class="app text-center">
@@ -54,6 +55,7 @@
           <p v-if="project.utilises && project.utilises[i]">{{ project.utilises[i] }}</p>
         </div>
       </div>
+       
       <!-- Cours -->
       <div class="cours mb-5">
         <h2 class="section-title">Cours</h2>
@@ -75,8 +77,9 @@
         <h2 class="section-title mb-3">Mon rôle</h2>
         <p>{{ project.role }}</p>
       </div>
-
+  <div class="section-divider"></div>
       <h2 class="section-title">Objectif du projet</h2>
+      
       <p>{{ project.description }}</p>
 
       <!-- Image visible uniquement pour les projets 2 à 6 -->

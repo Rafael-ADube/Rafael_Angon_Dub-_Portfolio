@@ -95,14 +95,14 @@ const app = Vue.createApp({
    
   },
   mounted() {
-    const params = new URLSearchParams(window.location.search);// code trouver sur chat gpt
+    const params = new URLSearchParams(window.location.search);// code trouver sur chat // Récupère les paramètres de l'URL sous forme d'objet pour pouvoir accéder facilement
     const id = parseInt(params.get("proj-id"));// Récupérer l'ID du projet depuis l'URL 
 
     fetch("projects.json")
       .then(res => res.json())
       .then(data => {
         this.projects = data;// tous les donnée de la liste projet
-        this.project = id ? this.projects.find(p => p.id === id) : null;//explquie 
+        this.project = id ? this.projects.find(p => p.id === id) : null;//trouve le bon id
         this.loading = false;
 
          {
@@ -120,7 +120,7 @@ const app = Vue.createApp({
                   scrollTrigger: {//déclencheur de défilement pour l'animation
                     trigger: card,//élément déclencheur
                     start: "top 80%",//position de départ de l'animation
-                    toggleActions: "play none none reverse",//actions de basculement
+                    toggleActions: "play none none reverse",//actions l'animation en quand ont est decu est quand on retourne
                   },
                   opacity: 0,
                   y: 50,
