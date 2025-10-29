@@ -2,7 +2,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-// === Animation du titre hero ===
+// Animation du titre hero 
 gsap.from(".hero h1", {
   scrollTrigger: {
     trigger: ".hero",
@@ -51,7 +51,7 @@ gsap.from("#apropos .col-md-6.text-center", {
 });
 
 
-// === Animation texte Portfolio ===
+//Animation texte Portfolio 
 gsap.to("#PORTFOLIO", {
   duration: 5,
   delay: 0.5,
@@ -74,7 +74,7 @@ const app = Vue.createApp({
       programs: [  // montre les compéteances
         { name: "Html", level: 50, current: 0 },//level montre le niveau  dans chaque compétence
         { name: "Css", level: 40, current: 0 }, //cuurrent montre le niveau de chaque des zero à level
-        { name: "Javascript", level: 30, current: 0 },
+        { name: "Javascript", level: 30, current: 0 }, //nom montre le nom des compétence
       
       ],
     
@@ -101,8 +101,8 @@ const app = Vue.createApp({
     fetch("projects.json")
       .then(res => res.json())
       .then(data => {
-        this.projects = data;
-        this.project = id ? this.projects.find(p => p.id === id) : null;
+        this.projects = data;// tous les donnée de la liste projet
+        this.project = id ? this.projects.find(p => p.id === id) : null;//explquie 
         this.loading = false;
 
          {
@@ -143,5 +143,5 @@ const app = Vue.createApp({
   }
 });
 
-
+// 
 app.mount("#appli-vue");

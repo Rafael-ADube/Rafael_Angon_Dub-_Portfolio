@@ -22,7 +22,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <!-- affiche le titre du projet écrit dans le  json.projets -->
+       >
           <a class="nav-link" href="#projets">Projets</a>
           <a class="nav-link" href="#apropos">À propos</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -76,6 +76,7 @@
           <img :src="project.images[0]" :alt="project.titre + ' image'" class="small-img mb-3">
 
           <div class="card-body text-center">
+            <!-- va chercher le titre et le texte dans le -->
             <h5 class="card-title fw-bold">{{ project.titre }}</h5>
             <p class="card-text">{{ project.court }}</p>
           </div>
@@ -119,7 +120,7 @@
         <p>DaVinci</p>
       </a>
       <a href="https://cycling74.com/products/max/" class="app" target="_blank">
-        <img src="image/Logo_Max_8_software.jpg" alt="Max">
+        <img src="image/Max.jpg" alt="Max">
         <p>Max</p>
       </a>
       <a href="https://www.adobe.com/products/photoshop.html" class="app" target="_blank">
@@ -155,7 +156,7 @@
         <p>Unity</p>
       </a>
       <a href="https://phaser.io/" class="app" target="_blank">
-        <img src="image/phase.png" alt="Phaser">
+        <img src="image/phaser.png" alt="Phaser">
         <p>Phaser</p>
       </a>
       <a href="https://www.adobe.com/products/aftereffects.html" class="app" target="_blank">

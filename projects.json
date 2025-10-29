@@ -2,9 +2,10 @@
   {
     "id": 1,
     "titre": "Métrage",
+     "cours": "Réaliser en Web 4",
     "categorie": "Site web / court-métrage",
      "court": "un site  de critiques cinématographiques.",
-    "description": "Site de critiques cinématographiques créé par Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
+    "description": "Site de critiques cinématographiques  qui présente des avis sur des films, des séries et des courts-métrages. Le site a été créé par trois amis passionnés de cinéma dans le cadre d'un projet de cours. Il permet aux utilisateurs de découvrir de nouvelles œuvres et de lire des critiques détaillées rédigées par nous. le  site a été développeé sur wordpress ou nous avons du tous faire de A à Z. ",
      "description longues": "Site de critiques cinématographiques créé par Rafael Angon Dubé, Mikael Arseneau et Alexandre Gendron.",
       "etape1": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
       "etape2": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
@@ -13,8 +14,8 @@
        "etape4": "Métrage est un site des critiques de films,de séries et de court-métrages créé par trois amis, Rafael ,Mikael et Alexandre. Nous y présentons les films que nous aimons ou avons récemment visionnés. Ce projet, réalisé dans le cadre du cours de Web 4,nous a permis de comprendre WordPress. ",
       "images": ["image/test.png", "image/métrage2.png", "image/métrage3.png","image/métrage4.png",  "image/moodboard.png"],
     "programmes": ["image/wordpress.png", "image/figma.png"],
-     "utilises": ["WordPress", "DaVinci Resolve"],
-    "role": "Rédacteur / Développeur web",
+     "utilises": ["WordPress", "Figma"],
+    "role": "Rédacteur ",
     "collaborations": [
       {"nom": "Alexandre Gendron", "role": "designer"},
       {"nom": "Miakel Arseneau", "role": "développeur "}
@@ -25,12 +26,13 @@
   {
     "id": 2,
     "titre": "Page Rouge",
+     "cours": "Réaliser en vidéo 1 et Animation 2D",
     "categorie": "Court-métrage stop-motion",
     "description": "Page Rouge est orinal mêlant stop-motion et animation 2D. Il raconte l’histoire d’un écrivain solitaire, pris au piège dans une boucle sans fin, incapable de terminer son œuvre. À chaque tentative, les mots lui échappent, les pages se vident, et la réalité autour de lui commence à se transformer. Ce projet explore les thèmes du blocage créatif, de l’obsession et de la perte de repères. L’univers visuel, à la fois sombre et stylisé, renforce le sentiment d’isolement du personnage et l’étrangeté de sa situation. Page Rouge a été réalisé en équipe, en combinant différentes techniques d’animation pour créer un court-métrage immersif et expressif. ",
     "images": ["image/pagerouge.png", "image/pagerouge2.png", "image/pagerouge3.png"],
      "court": "Un film en stop-motion avec des animation 2D.",
     "programmes": ["image/davinci.png", "image/After_Effects.png"],
-    "programmes_utilises": ["WordPress", "DaVinci Resolve"],
+    "utilises": ["DaVinci Resolve", "After Effects"],
     "role": "Acteur",
     "collaborations": [
       {"nom": "Émeryk Bélisle", "role": "animateur 2D et Directeur photo"},
@@ -42,6 +44,7 @@
   {
     "id": 3,
     "titre": "Bandit-Go",
+     "cours": "Réaliser en Réalité mix",
     "categorie": "Jeu vidéo VR",
     "description": " Bandit-go est un jeu d'action imersif en réalité virtuelle (VR), développé avec Unity. IL s'inspire du jeu d'arcade classique frogger mais revisité dans une ambiance moderne de cambriolage et de fuite urbaine. vous incarnez un bandit venant de  dévaliiser une banque. votre mission : rejoindre votre voiture garée plus loin dans la rue pour échapper à  la police. Mais attention, la route est plein de voitures.  Ce projet combine gameplay VR, design interactif  pour offrir une expérience à la fois amusante et immersive.",
       "court": "Un jeu  VR en mode rétro.",
@@ -60,25 +63,25 @@
     "titre": "Les Cendres Oubliées",
      "cours": "Réaliser en Intéraction ludique",
     "categorie": "Jeu vidéo",
-    "description": "",
+    "description": "les cendres oubliée est un jeu de platefome en 2D fait avec phaser. le jeu a été développeé dans le cours d'interaction ludique tous au longt de la session. ont à fu tous faire de a à z coderle jeu,faire les sprite sheet, créé la map du jeu etc.le joueur doit sauver son monde du culte des flammes avant qu'il soit trop tard. le joueur incarne un petit mage de la forêt qui doit combattre Cindorak, un démon qui cherche à détruire la nature en répand. le joueur pourlancer des bouble de glace pour vaincre les différent enemies et ainsi gagner",
     "court": "Jeu de plateforme avec Phaser, le joueur combat Cindorak pour sauver la forêt",
     "images": ["image/cendre.png", "image/cendre2.png", "image/cendre3.png", "image/cendre4.png"],
     "programmes": ["image/phaser.png", "image/figma.png"],
-    "programmes_utilises": ["Phaser", "Figma"],
+    "utilises": ["Phaser", "Figma"],
     "role": "Créateur du jeu",
-    "itchio": "https://kostored.itch.io/les-cendres-oublies"
+    "youtube": "https://kostored.itch.io/les-cendres-oublies"
   },
   {
     "id": 5,
     "titre": "La Maudite Routine",
-     "cours": "Réaliser en vidéo 1 et Animation 2D",
+     "cours": "Réaliser en vidéo 2 ",
     "categorie": "Court-métrage",
     "description": "La maudite routine est un court métrage qui explore le thème de la répétition quotidienne et de l'ennui à travers le personnage principal, interprété par moi-même. Le film suit une journée typique dans la vie de ce personnage, mettant en lumière les petites frustrations et les moments de réflexion qui surgissent au milieu de la monotonie. Réalisé en équipe, ce projet a permis d'expérimenter avec la narration visuelle et le développement du personnage, tout en collaborant étroitement avec le réalisateur Radhouane Kordan et l'équipe de production pour donner vie à cette histoire relatable.",
     "court": "un court métrage qui explore le thème de la répétition  du quotidienne.",
      "longue": "La maudite routine est un court métrage qui explore le thème de la répétition quotidienne et de l'ennui à travers le personnage principal, interprété par moi-même. Le film suit une journée typique dans la vie de ce personnage, mettant en lumière les petites frustrations et les moments de réflexion qui surgissent au milieu de la monotonie. Réalisé en équipe, ce projet a permis d'expérimenter avec la narration visuelle et le développement du personnage, tout en collaborant étroitement avec le réalisateur Radhouane Kordan et l'équipe de production pour donner vie à cette histoire relatable.",
     "images": ["image/mauditeroutine.png", "image/mauditeroutine2.png", "image/mauditeroutine3.png"],
-    "programmes": ["image/davinci.png", "image/figma.png"],
-    "programmes_utilises": ["DaVinci Resolve", "Reaper"],
+    "programmes": ["image/davinci.png", "image/reaper.jpg"],
+    "utilises": ["DaVinci Resolve", "Reaper"],
     "role": "Comédien",
     "collaborations": [
       {"nom": "Ahmed Kaïssoumi", "role": "direction artistique"},
@@ -91,11 +94,12 @@
     "id": 6,
     "titre": "Paysage Sonore",
     "categorie": "Projet multimédia",
+     "cours": "Réaliser en aniamtion 3D ,traitement audiovisuel et audio 2",
     "description": "paysage Sonore est un projet multidisciplinaire qui fusionne trois domaines : l’animation 3D, l’audio et le traitement audiovisuel. L’objectif était de créer une œuvre immersive où l’image et le son interagissent de manière cohérente pour offrir une expérience sensorielle unique. j'ai du créér des paysages 3D qui réagissent au son en utilisant Maya pour la modélisation et l’animation, Reaper pour la conception sonore, et TouchDesigner pour le traitement audiovisuel en temps réel. Ce projet a permis d’explorer les interactions entre différents médias et de repousser les limites de la création audiovisuelle. jai du faire ce projet seul. il y a eu ensuite une présentation en classe. dans le studio  ou j'ai du performer en direct le traitement audiovisuel en temps réel avec TouchDesigner, synchronisant les éléments visuels avec la bande sonore que j'avais créée.",
     "images": ["image/paysage.png", "image/paysage2.png", "image/paysage3.png"],
     "court": "une expérience sensorielle unique qui mélange 3D,audio et touchedesigner.",  
-    "programmes": ["image/Max.png",  "image/maya.png", "image/touchdesigner.png"],
-    "programmes_utilises": ["Max", "Reaper", "Maya", "TouchDesigner"],
+    "programmes": ["image/Max.jpg",  "image/maya.png", "image/touchdesigner.png","image/reaper.jpg"],
+    "utilises": ["Max", "Maya",  "TouchDesigner", "Reaper"],
     "role": "Créateur du projet",
     "lien": ""
   }
